@@ -1,0 +1,108 @@
+/* css for navbar starts here */
+body{
+    height: auto;
+    width: auto;
+    margin: 0%;
+}
+.pr_navbar_maincontainer a{
+    text-decoration: none;
+    color: white !important;
+}
+.pr_navbar_maincontainer{
+    background-color: #60C2BC;
+    height: 90px;
+    width: 100%;
+    display: flex;
+
+}
+.pr_navbar_col1{
+    width: 25%;
+    height: 100%;
+
+    
+}
+.pr_navbar_col2{
+    width: 40%;
+}
+.pr_navbar_col3{
+    width: 35%;
+    display: flex;
+    color: white;
+}
+.pr_navbar_col1_logo{
+    width: 83%;
+    height: 100%;
+    margin: auto;
+}
+.pr_navbar_col1_logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+.search_container{
+width: 80%;
+margin: auto;
+height: 100%;
+margin-top: 27px;
+
+}
+
+.search_container i{
+    position: absolute;
+    font-size: x-large;
+    padding: 5px 4px 4px 12px;
+    
+}
+.search_container input{
+    height:30px;
+    width: 400px;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    padding: 2px 2px 2px 45px;
+    font-size: large;
+}
+.search_container input::placeholder{
+   
+    font-weight: bold;
+}
+.pr_navbar_col3_item1{
+    width: 33.33%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.pr_navbar_col3_item2{
+    width: 33.33%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.pr_navbar_col3_item3{
+    width: 33.33%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.pr_navbar_col3_item1 span{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.pr_navbar_col3_item2 span{
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+.pr_navbar_col3_item3 span{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.pr_navbar_col3_item1 span:hover{
+    color:#F37F25;
+}
+.pr_navbar_col3_item2 span:hover{
+    color:#F37F25;
+}
+.pr_navbar_col3_item3 span:hover{
+    color:#F37F25;
+}
+.pr_navbar_ham{
+    display: none;
+}
+/* css for navbar ends here */
