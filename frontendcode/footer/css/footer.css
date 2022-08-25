@@ -3,29 +3,35 @@
     margin: 0;
     padding: 0;
 }
+
 .pr_footer_main_container {
     background: #212529;
     color: white;
     border-top: 2px solid #707070;
 }
+
 .pr_footer_content_box_component {
     color: white;
     padding: 25px 35px 20px;
     font-size: 28px
 }
+
 .pr_footer_content_box ul {
     list-style: none;
     padding: 10px 0px;
 }
+
 li {
     height: 27px;
     width: 18px;
     margin: 12px 0px 12px 0px;
 }
+
 li img {
     width: 100%;
     height: 100%;
 }
+
 .pr_footer_right_and_policy {
     padding: 13px 3px;
     margin: 1px 28px;
@@ -35,29 +41,43 @@ li img {
     justify-content: space-between;
     font-size: 19px
 }
-.pr_footer_right_and_policy_col2 a{
+
+.pr_footer_right_and_policy_col2 {
+    float: right;
+    margin-left: 146px;
+}
+
+.pr_footer_right_and_policy_col2 a {
     text-decoration: none;
     color: white;
     padding: 2px 8px;
 }
+
 /* footer Css ends here */
 /* responsive footer css starts here */
-@media only screen and (max-width: 700px){
-    
+@media only screen and (max-width: 700px) {
+
     .pr_footer_right_and_policy {
         display: block;
-
+        font-size: 15px;
     }
+
+
     .pr_footer_right_and_policy_col2 {
         padding: 12px 0px;
         margin-top: 13px;
+        float: none;
+    margin-left: 0;
+        /* float: right; */
     }
-    .pr_footer_right_and_policy_col2 a{
+
+    .pr_footer_right_and_policy_col2 a {
         padding: 2px 0px;
     }
-    
+
 
 
 
 }
+
 /* responsive footer css Ends here */
