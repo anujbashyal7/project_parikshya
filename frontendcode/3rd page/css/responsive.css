@@ -1,0 +1,39 @@
+ @media screen and (max-width: 600px) {
+    .pr_3rdpagebigbox h1{
+        font-size: large;
+    }
+    .pr_boxforstarttest{  
+        margin: 10px 0px 0px 6%;
+        width: 20%;
+    }
+    .pr_3rdpagebigbox_item h2{
+        font-size: medium;
+
+    }
+    
+    .pr_newdiv h3{
+font-size: small;
+    } 
+.pr_boxfornegativemark{
+    height: 67%;
+}
+    .pr_boxfortime{
+        height: 67%;
+    }
+    
+    .pr_boxforfullmarks{
+        height: 67%;
+    }
+    .pr_boxforpassmarks{
+        height: 67%;
+    }
+    .pr_boxforstarttest{
+        height: 67%;
+    }
+ 
+    .pr_forpagination{
+        width: 70%;
+        margin: auto;
+
+    }
+  }
