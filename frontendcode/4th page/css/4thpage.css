@@ -1,0 +1,89 @@
+/* css for 4th page starts here */
+body{
+    height: auto;
+    width: auto;
+    margin: 0%;
+    background-color: #212529;
+}
+.pr_bigbox{
+    height: 500px;
+    width: 65%;
+    background-color: #273E3D;
+    justify-content: center;
+    margin: auto;
+    margin-top: 45px;
+}
+.pr_firsttext{
+    display: flex;
+}
+
+.pr_firsttext h1{
+    color: white;
+    padding: 5px 0px 0px 15px;
+
+}
+.pr_details h3 {
+    margin: 0px 0px 0px 25px;
+    color: white;
+    
+}
+.pr_forfree{
+    height: 35px;
+    width: 55px;
+    background-color: #29C51E;
+    text-align: center;
+    padding: 0px 3px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.pr_forfree h3{
+    color: white;
+    margin: 6px 0px 0px 0px;
+    
+}
+hr.one {
+    border: 1px solid #707070;
+    width: 95%;
+}
+.pr_clickheretext h2{
+    color: white;
+    margin: 15px 0px 0px 25px;
+}
+.pr_forbuttons{
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color:#E1B12E;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* margin: 20px 0px 0px 300px; */
+  }
+  .button2 {
+    background-color:rgb(37, 37, 37);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .pr_details{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 0px 0px;
+  }
+ /* css for 4th page ends here */
