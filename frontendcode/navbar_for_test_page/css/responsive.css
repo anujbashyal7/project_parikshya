@@ -1,0 +1,35 @@
+/* css for responsive navbar_testpage starts here */
+@media screen and (max-width: 600px) {
+    .pr_navbar_testpage_maincontainer {
+        display: block;
+    }
+
+    .pr_navbar_testpage_col1 {
+        height: 85px;
+        width: 48%;
+        margin: auto;
+    }
+
+    .pr_navbar_testpage_col1 img {
+        height: 133%;
+        margin-left: -33px;
+        object-fit: contain;
+    }
+
+    .pr_navbar_testpage_col2_time_hr span {
+        background: #a19d99;
+        font-size: large;
+    }
+
+    .pr_navbar_testpage_col2_attempt {
+        font-size: large;
+    }
+
+    .pr_navbar_testpage_col2_time_dot {
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+
+/* css for responsive navbar_testpage starts here */
