@@ -76,10 +76,11 @@
 .pr_packages_get_started {
     background: #000000;
     margin-top: 55px;
+    height: 150px;
 }
 
 .pr_packages_get_started_text {
-    padding: 12px;
+    padding: 26px;
     font-size: 16px;
     color: #FFFFFF;
     text-align: center;
