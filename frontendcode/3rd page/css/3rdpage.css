@@ -49,7 +49,7 @@ body{
     text-align: center;
     color: white;
     margin: 5px;
-    text-decoration:line-through;
+    text-decoration:line-through solid black;
 }
 .dot1 {
     height: 10px;
