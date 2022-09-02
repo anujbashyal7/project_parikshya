@@ -1,0 +1,53 @@
+/* css for navbar_testpage starts here */
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.pr_navbar_testpage_maincontainer {
+    background: #60C2BC;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.pr_navbar_testpage_col1 {
+    height: 105px;
+    width: 30%;
+}
+
+.pr_navbar_testpage_col1 img {
+    height: 100%;
+}
+
+.pr_navbar_testpage_col2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 9px;
+    padding-right: 5px;
+}
+
+.pr_navbar_testpage_col2_attempt {
+    font-size: larger;
+    padding: 49px 0px 0px 0px;
+}
+
+.pr_navbar_testpage_col2_time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    padding: 49px 0px 0px 0px;
+}
+
+.pr_navbar_testpage_col2_time_hr span {
+    background: rgb(255, 255, 255);
+    padding: 3px 13px;
+    border-radius: 10px;
+}
+
+.pr_navbar_testpage_col2_time_dot {
+    color: white;
+}
+
+/* css for navbar_testpage ends here */

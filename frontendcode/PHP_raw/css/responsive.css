@@ -1,0 +1,122 @@
+/* css for responsive navbar starts here */
+@media screen and (max-width: 600px) {
+    .pr_navbar_col1 {
+        width: 100%;
+        height: 70px;
+
+    }
+
+    .pr_navbar_maincontainer {
+        display: block;
+        height: 155px;
+        width: 100%;
+    }
+
+    .pr_navbar_col2 {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .search_container {
+        width: 100%;
+    }
+
+    .search_container input {
+        width: 80%;
+        height: 25px;
+
+    }
+
+    .pr_navbar_col3 {
+        display: none;
+    }
+
+    .pr_navbar_ham {
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .pr_navbar_hamburger {
+        width: 20px;
+        height: 3px;
+        background-color: #F37F25;
+        margin: 3px 0px;
+        border-radius: 1px;
+    }
+
+    .pr_navbar_ham_rows {
+        /* width: 100%; */
+        margin-left: 120px;
+
+    }
+
+    .pr_navbar_ham_contents {
+        list-style: none;
+        padding: 6px 0px;
+        background-color: black;
+        width: 100%;
+        /* padding: 50px 0; */
+        /* text-align: center; */
+        /* background-color: lightblue; */
+        margin-top: 8px;
+        /* display: none; */
+
+    }
+
+    .pr_navbar_ham_contents li {
+        margin: 25px 2px;
+        font-size: x-large;
+        font-weight: bolder;
+        color: white;
+
+    }
+    .pr_navbar_ham_contents li:hover{
+        color:#F37F25;
+    }
+    #navbar_ham_myDIV{
+        display: none;
+    }
+}
+/* css for responsive navbar starts here */
+
+
+/* packages responsive css */
+@media only screen and (max-width: 690px) {
+    .pr_packages_content_boxes {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .pr_packages_content_boxes_box_text {
+        font-size: 23px;
+        margin: 2px 0px;
+        padding: 3px;
+    }
+}
+/* packages Responsive css finished  */
+
+
+/* responsive footer css starts here */
+@media only screen and (max-width: 700px) {
+
+    .pr_footer_right_and_policy {
+        display: block;
+        font-size: 15px;
+    }
+
+
+    .pr_footer_right_and_policy_col2 {
+        padding: 12px 0px;
+        margin-top: 13px;
+        float: none;
+    margin-left: 0;
+        /* float: right; */
+    }
+
+    .pr_footer_right_and_policy_col2 a {
+        padding: 2px 0px;
+    }
+}
+/* responsive footer css Ends here */
