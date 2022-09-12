@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* question page css */
+.pr_question_maincontainer {
+    background: #000000;
+    padding: 25px;
+    color: white;
+}
+
+.pr_question_heading {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.pr_question_QAbox {
+    background: #5E5A5A;
+    padding: 15px 0px 15px 30px;
+    font-size: x-large;
+    margin: 10px 0px;
+}
+
+.pr_question_QAbox_q {
+    display: flex;
+}
+
+.pr_question_QAbox_ans {
+    padding: 0px 0px 0px 35px;
+}
+
+.pr_question_QAbox_q p span {
+    padding: 0px 0px 0px 10px;
+}
+
+.pr_question_QAbox_tickbox input[type=checkbox] {
+    -webkit-transform: scale(2);
+    transform: scale(1.5);
+}
+.pr_question_page_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.pr_question_page_buttons button{
+    width: 7rem;
+    padding: 9px 0px;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    margin: 10px 3px;
+}
+.pr_question_page_buttons .prev{
+    background: #106EAC;
+}
+.pr_question_page_buttons .nex{
+    background: #EB9744;
+}
+.pr_question_page_buttons .nex:hover{
+    background: #106EAC;
+}
+.pr_question_submit_buttons{
+    display: flex;
+    /* float: right; */
+    justify-content: right;
+}
+.pr_question_submit_buttons button{
+    width: 7rem;
+    padding: 9px 0px;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    margin: 10px 3px;
+}
+.pr_question_submit_buttons .can {
+    background: #FF0011;
+}
+.pr_question_submit_buttons .sub {
+    background: #4FC92B;
+}
+/* question page css ends */

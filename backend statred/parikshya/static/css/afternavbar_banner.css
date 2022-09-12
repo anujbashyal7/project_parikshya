@@ -1,0 +1,68 @@
+/* css for afternavbar_banner starts here  */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pr_afternavbar {
+    margin-top: 0px;
+    /* position: absolute; */
+    top: auto;
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    background-image: url("../image/background.png");
+}
+
+.pr_afternavbarbox1 {
+    background: rgba(87, 86, 86, 0.637);
+    width: 65%;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    /* height: 40px; */
+    border-radius: 10px;
+    padding: 0%;
+    /* opacity: 0.35; */
+}
+
+.pr_afternavbarbox1 h1 {
+    color: white;
+}
+
+.pr_afternavbarbox2 {
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 40px;
+
+}
+
+.pr_afternavbarbox2 h1 {
+    color: #F37F25;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xxx-large;
+}
+
+.pr_afternavbarbox3 {
+    background: #ffffffab;
+    width: 35%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    /* height: 40px; */
+
+    border-radius: 5px;
+
+}
+
+.pr_afternavbarbox3 h3 {
+    padding: 3px 0px;
+    font-style: normal;
+
+
+}
