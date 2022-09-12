@@ -28,7 +28,7 @@ a{
     margin-top: 30px;
     background-color: #9B9B9B;
     width: 95%;
-    height: 95%;
+    height: 70%;
     border-radius: 17%;
     margin: 30px auto;
     cursor: pointer;
@@ -50,7 +50,7 @@ a{
 
 .pr_packages_content_boxes_box_text {
     text-align: center;
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
     font-size: 30px;
     line-height: 35px;
     padding-top: 12px;
@@ -65,7 +65,7 @@ a{
 
 .pr_packages_get_started {
     background: #000000;
-    margin-top: 80px;
+    margin-top: 20px;
     height: 200px;
 }
 
