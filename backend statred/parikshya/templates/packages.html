@@ -1,0 +1,57 @@
+<!-- packages and get started html Started -->
+{% load static %}
+<div class="pr_packages_content">
+    <div class="pr_packages_content_heading">
+        <h3>PACKAGES</h3>
+        <div class="pr_packages_content_heading_hr"></div>
+    </div>
+    <div class="pr_packages_content_boxes">
+        {% for i in course_query %}
+        <div class="pr_packages_content_boxes_box">
+            <div class="pr_packages_content_boxes_box_img">
+                <img src="{{i.photo_img.url}}" alt="">
+            </div>
+            <div class="pr_packages_content_boxes_box_text">
+                <p>{{i.Course_Name}}</p>
+                <p>{{i.Course_price}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <!--        <div class="pr_packages_content_boxes_box">-->
+        <!--            <div class="pr_packages_content_boxes_box_img">-->
+        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
+        <!--            </div>-->
+        <!--            <div class="pr_packages_content_boxes_box_text">-->
+        <!--                <p>+2 CHAPTERS</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="pr_packages_content_boxes_box">-->
+        <!--            <div class="pr_packages_content_boxes_box_img">-->
+        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
+        <!--            </div>-->
+        <!--            <div class="pr_packages_content_boxes_box_text">-->
+        <!--                <p>+2 CHAPTERS</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="pr_packages_content_boxes_box">-->
+        <!--            <div class="pr_packages_content_boxes_box_img">-->
+        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
+        <!--            </div>-->
+        <!--            <div class="pr_packages_content_boxes_box_text">-->
+        <!--                <p>+2 CHAPTERS</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+    </div>
+</div>
+<div class="pr_packages_get_started">
+    <div class="pr_packages_get_started_text">
+        <h3>START YOUR JOURNEY. ENROLL NOW.</h3>
+        <h3>
+            <a href="#">
+                <span>GET STARTED</span>
+                <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        </h3>
+    </div>
+</div>
+<!-- packages and get started html finished -->

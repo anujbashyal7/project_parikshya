@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* second page css  */
+/* mocktest css */
+.pr_mocktest_maincontainer {
+    background: #212529;
+    height: fit-content;
+}
+
+.pr_mocktest_maincontainer .pr_mocktest_language {
+    text-align: center;
+    padding: 40px;
+}
+
+.pr_mocktest_maincontainer .pr_mocktest_language h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 5rem;
+}
+
+.pr_mocktest_language_hr {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 7px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.pr_mocktest_language p {
+    color: #60C2BC;
+    padding: 3px;
+    margin-top: 12px;
+    font-size: larger;
+}
+
+.pr_mocktest_testbox {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 28rem;
+    width: 100%;
+}
+
+.pr_mocktest_testbox a {
+    text-decoration: none;
+}
+
+.pr_mocktest_testbox_box {
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    border: 1px solid #707070;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.pr_mocktest_testbox_box_img {
+    height: 60%;
+    width: 100%;
+}
+
+.pr_mocktest_testbox_box_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 27px;
+}
+
+.pr_mocktest_testbox_box_text {
+    text-align: center;
+    color: white;
+}
+
+.pr_mocktest_testbox_box_text h3 {
+    font-size: x-large;
+}
+
+.pr_mocktest_testbox_box_text_h3 {
+    padding: 20px 0px;
+}
+
+.pr_mocktest_testbox_box_text_p {
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.pr_mocktest_testbox_box:hover {
+    background: #464748;
+}
+
+/* mocktest css  */
+/* above footer css  */
+.pr_mocktest_above_footer {
+    padding: 5px 37px;
+}
+
+.pr_mocktest_above_footer_lang_h3 {
+    color: white;
+    font-size: 27px;
+}
+
+.pr_mocktest_above_footer_lang .pr_mocktest_language_hr {
+    margin: 4px auto auto 0px;
+    border-radius: 1px;
+}
+
+.pr_mocktest_above_footer_lang_p {
+    color: #60C2BC;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.pr_mocktest_above_footer {
+    display: flex;
+}
+
+.pr_mocktest_above_footer_lang {
+    width: 30%;
+    padding: 24px 30px 0px 0px;
+}
+
+.pr_mocktest_above_footer_buy_course {
+    border: 1px solid #707070;
+    height: 210px;
+    width: 200px;
+}
+
+.pr_mocktest_above_footer_buy_course_anycourse {
+    background: #60C2BC;
+    height: 60%;
+    width: 92%;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.pr_mocktest_above_footer_buy_course_anycourse h3 {
+    font-size: xx-large;
+    padding: 30px 25px 0px 5px;
+}
+
+.pr_mocktest_above_footer_buy_course_buynow {
+    padding: 20px 0px 0px 15px;
+    color: white;
+    font-size: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.pr_mocktest_above_footer_buy_course_buynow p {
+    padding: 9px 25px 0px 0px;
+}
+
+.pr_mocktest_above_footer_buy_course_buynow .fa-arrow-right {
+    color: white;
+    padding: 9px 0px 0px 0px;
+    font-size: xx-large;
+}
+
+.pr_mocktest_above_footer_buy_course_buynow:hover {
+    padding: 20px 0px 0px 27px;
+    transition-duration: .5s;
+    font-size: 23px;
+    color: #0800FE;
+}
+
+/* above footer css finished  */
+/* second page responsive css  */
+@media screen and (max-width:750px) {
+    .pr_mocktest_testbox {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 50% 50%;
+        justify-content: space-evenly;
+        height: 45rem;
+    }
+
+    .pr_mocktest_testbox_box_img {
+        height: 60%;
+        width: 100%;
+    }
+
+    .pr_mocktest_testbox_box_text_h3 {
+        padding: 10px 0px 4px;
+    }
+
+    @media screen and (max-width:500px) {
+        .pr_mocktest_testbox {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            height: 48rem;
+        }
+
+        .pr_mocktest_testbox_box_text h3 {
+            font-size: 24px;
+        }
+
+        .pr_mocktest_testbox_box_text_p {
+            line-height: 23px;
+            font-size: 20px;
+        }
+
+        .pr_mocktest_above_footer_lang {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .pr_mocktest_above_footer {
+            display: block;
+        }
+
+        .pr_mocktest_above_footer_buy_course {
+            margin: 35px auto 0px auto;
+        }
+
+        .pr_mocktest_above_footer_lang {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .pr_mocktest_above_footer_lang .pr_mocktest_language_hr {
+            margin: 4px auto auto auto;
+        }
+
+        .pr_mocktest_above_footer_buy_course {
+            border: 1px solid #707070;
+            height: 220px;
+            width: 200px;
+        }
+    }
+}
+
+/* second page responsive css ends  */
+/* second page css  */

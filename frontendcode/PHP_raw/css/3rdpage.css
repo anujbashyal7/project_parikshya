@@ -3,9 +3,11 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: black;
+  background-color: #212529;
 }
-
+a{
+text-decoration: none;
+}
 .pr_3rdpagetextone {
   height: 70px;
   width: 100%;
@@ -14,7 +16,7 @@ body {
 
 .pr_3rdpagetextone h1 {
   color: white;
-  padding: 0px 0px 0px 50px;
+  padding: 20px 0px 0px 50px;
 }
 
 .pr_3rdpagebigbox {
@@ -23,13 +25,14 @@ body {
   background-color: #404040;
   margin: auto;
   margin-bottom: 50px;
+  padding: 15px;
 }
 
 .pr_3rdpagebigbox_item {
   width: 100%;
 }
 
-.pr_3rdpagebigbox h1 {
+.pr_3rdpagebigbox h2 {
   color: white;
   margin: 8px 0px 0px 9px;
 

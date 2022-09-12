@@ -1,0 +1,95 @@
+{% load static %}
+<div class="pr_mocktest_maincontainer">
+    <div class="pr_mocktest_language">
+        <h2>MOCK SETS</h2>
+        <div class="pr_mocktest_language_hr"></div>
+        <p>Pick any of mock tests that you are looking for </p>
+    </div>
+    <div class="pr_mocktest_testbox">
+         {% for i in course_query %}
+        <div class="pr_mocktest_testbox_box">
+            <a href="3rdpage.php">
+                <div class="pr_mocktest_testbox_box_img"><img
+                        src="{{i.photo_img.url}}"
+                        alt=""
+                ></div>
+                <div class="pr_mocktest_testbox_box_text">
+                    <div class="pr_mocktest_testbox_box_text_h3">
+                        <h3>{{i.Course_Name}}</h3>
+                    </div>
+                    <div class="pr_mocktest_testbox_box_text_p">
+                        <p>0+ MOCK SETS</p>
+                        <p>0+ QUESTIONS</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+<!--        <div class="pr_mocktest_testbox_box">-->
+<!--            <div class="pr_mocktest_testbox_box_img"><img-->
+<!--                    src="/image/non.jpg"-->
+<!--                    alt=""-->
+<!--            ></div>-->
+<!--            <div class="pr_mocktest_testbox_box_text">-->
+<!--                <div class="pr_mocktest_testbox_box_text_h3">-->
+<!--                    <h3>+2 CHAPTERS MCQS</h3>-->
+<!--                </div>-->
+<!--                <div class="pr_mocktest_testbox_box_text_p">-->
+<!--                    <p>0+ MOCK SETS</p>-->
+<!--                    <p>0+ QUESTIONS</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="pr_mocktest_testbox_box">-->
+<!--            <div class="pr_mocktest_testbox_box_img"><img-->
+<!--                    src="/image/non.jpg"-->
+<!--                    alt=""-->
+<!--            ></div>-->
+<!--            <div class="pr_mocktest_testbox_box_text">-->
+<!--                <div class="pr_mocktest_testbox_box_text_h3">-->
+<!--                    <h3>+2 CHAPTERS MCQS</h3>-->
+<!--                </div>-->
+<!--                <div class="pr_mocktest_testbox_box_text_p">-->
+<!--                    <p>0+ MOCK SETS</p>-->
+<!--                    <p>0+ QUESTIONS</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="pr_mocktest_testbox_box">-->
+<!--            <div class="pr_mocktest_testbox_box_img"><img-->
+<!--                    src="/image/non.jpg"-->
+<!--                    alt=""-->
+<!--            ></div>-->
+<!--            <div class="pr_mocktest_testbox_box_text">-->
+<!--                <div class="pr_mocktest_testbox_box_text_h3">-->
+<!--                    <h3>+2 CHAPTERS MCQS</h3>-->
+<!--                </div>-->
+<!--                <div class="pr_mocktest_testbox_box_text_p">-->
+<!--                    <p>0+ MOCK SETS</p>-->
+<!--                    <p>0+ QUESTIONS</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <div class="pr_mocktest_above_footer">
+        <div class="pr_mocktest_above_footer_lang">
+            <div class="pr_mocktest_above_footer_lang_h3">
+                <h3>TEST PACKS</h3>
+            </div>
+            <div class="pr_mocktest_language_hr"></div>
+            <div class="pr_mocktest_above_footer_lang_p">
+                <p>A complete package to practice and get your preparation
+                    with extra...</p>
+            </div>
+        </div>
+        <div class="pr_mocktest_above_footer_buy_course">
+            <div class="pr_mocktest_above_footer_buy_course_anycourse">
+                <h3>ANY <br> COURSE</h3>
+            </div>
+            <div class="pr_mocktest_above_footer_buy_course_buynow">
+                <p> Buy Now </p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
