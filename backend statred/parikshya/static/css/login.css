@@ -20,10 +20,11 @@ a{
     width: 75%;
     height: 80%;
     position: fixed;
-    top: 80px;
+    top: 114px;
     left: 180px;
-    background-color: #60C2BC;
+    background-color:#60928F;
     display: flex;
+    border-radius:20px;
 
 }
 
@@ -44,7 +45,7 @@ a{
     height: 50%;
     object-fit: contain;
     border-radius: 50%;
-    background-color: #273E3D;
+    background-color: white;
 }
 
 .pr_login_textpart_container {
@@ -74,9 +75,9 @@ a{
 .pr_login_textpart_container input {
     font-size: large;
     color: #273E3D;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
-    padding: 15px 50px 15px 35px;
+    padding: 12px 50px 12px 35px;
 
 }
 
@@ -119,6 +120,7 @@ a{
     width: 100%;
     margin-top: 10px;
     cursor: pointer;
+    font-size:large;
 }
 
 .pr_login_forget_pw:hover {
@@ -131,13 +133,10 @@ a{
 }
 
 .pr_login_create_new {
-cursor: pointer;
-    margin-top: 135px;
-    margin-left: 115px;
+    cursor: pointer;
+    margin-top: 223px;
+    margin-left: 350px;
     font-size: large;
+    font-weight:bolder;
 }
 
-.pr_login_create_new:hover {
-    color: #00A73D;
-
-}

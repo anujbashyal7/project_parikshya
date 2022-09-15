@@ -79,15 +79,21 @@ a{
 .pr_packages_get_started_text h3 {
     line-height: 60px;
     font-size: xx-large;
+     color: #fba638d2;
 }
 
-.pr_packages_get_started_text h3 span {
-    color: #fba638d2;
+.pr_package_buy_now {
+    color: white !important;
     cursor: pointer;
 }
-
-.pr_packages_get_started_text h3 span:hover {
-    color: #FBA638;
+.pr_package_buy_now span{
+color:white;
+font-weight: bold;
+font-size:xx-large;
 }
+.pr_package_buy_now span:hover{
+color: green;
+}
+
 
 /* packages and get started css finished  */
