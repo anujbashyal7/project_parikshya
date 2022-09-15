@@ -15,3 +15,11 @@ def mock_test_page(request):
     course_query = Course.objects.all()
     context = {'course_query': course_query}
     return render(request, 'mock.php', context)
+
+
+def login_page(request):
+    return render(request, 'login.html')
+
+
+def registration_page(request):
+    return render(request, 'register.html')

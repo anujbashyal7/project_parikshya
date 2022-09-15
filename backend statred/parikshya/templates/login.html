@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
         <title>Document</title>
     </head>
     <body>
@@ -13,7 +14,7 @@
             <div class="pr_login_maincontainer_content">
                 <div class="pr_login_image_container">
                     <div class="pr_login_image">
-                        <img src="image/man (2).png" alt="">
+                        <img src="{% static 'image/man (2).png' %}" alt="">
                     </div>
                 </div>
                 <div class="pr_login_textpart_container">
@@ -36,11 +37,11 @@
                     <div class="pr_login_button">
                         <button>Login</button>
                     </div>
-                    <div class="pr_login_forget_pw">
-                        <p>Forget Password?</p>
-                    </div>
+<!--                    <div class="pr_login_forget_pw">-->
+<!--                        <p>Forget Password?</p>-->
+<!--                    </div>-->
                     <div class="pr_login_create_new">
-                        <a href="register.html">
+                        <a href="{% url 'registration_page' %}">
                             <p>Create your Account</p>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
