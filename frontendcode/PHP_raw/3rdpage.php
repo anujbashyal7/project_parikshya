@@ -17,7 +17,7 @@
 <body>
     <?php include 'header.html'; ?>
     <?php include '3rdpage.html'; ?>
-    <?php include 'footer.html'; ?>
+    <!-- <?php include 'footer.html'; ?> -->
     <script src="js/main.js"></script>
 </body>
 
