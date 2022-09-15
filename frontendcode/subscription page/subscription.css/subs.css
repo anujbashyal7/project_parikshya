@@ -89,7 +89,25 @@ input[type="radio"]:checked + span{
     color:rgb(241, 58, 58);
 }
 input[type="text"],input[type="email"]{
-    width: 100%;
+    width: 50%;
     background: transparent;
     padding: 7px 10px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin: 4px 0;
 }
+form button{
+    background: rgb(224, 160, 41);
+    color: white;
+    font-size: 16px;
+    padding: 12px 50px;
+    margin: 20px 0;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+form button:hover{background-color: rgb(255, 166, 0);}
