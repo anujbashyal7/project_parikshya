@@ -9,6 +9,9 @@ body{
     background-color: #322B2B;
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 /* .pr_ap_top_maincontainer a{
     width: 100%;

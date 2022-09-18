@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/top.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/add_question.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="pr_ap_top_maincontainer">
+            <a href="dashboard.php">
+                <div class="pr_ap_top_logo">
+                    <img src="image/Mask Group 16.png" alt="image_here">
+                </div>
+            </a>
+            <div class="pr_ap_top_blank"></div>
+            <div class="pr_ap_top_logout">
+                <button>Logout</button>
+            </div>
+        </div>
+        <div class="pr_ap_side_main" id="sidebar_contents">
+            <div class="pr_ap_side_profile">
+                <div class="pr_ap_side_pp">
+                    <img src="image/man (2).png" alt="">
+                </div>
+                <div class="pr_ap_side_name">
+                    <P>Admin</P>
+                </div>
+            </div>
+            <a href="dashboard.php">
+                <div class="pr_ap_side_dashboard">
+                    <p>Dashboard</p>
+                </div>
+            </a>
+            <a href="course.php">
+                <div class="pr_ap_side_Course">
+                    <p>Course</p>
+                </div>
+            </a>
+            <a href="question.php">
+                <div class="pr_ap_side_Questions">
+                    <p>Questions</p>
+                </div>
+            </a>
+            <a href="student.php">
+                <div class="pr_ap_side_student">
+                    <p>Students</p>
+                </div>
+            </a>
+        </div>
+        <div class="pr_ad_addquestion_main">
+            <h2>Add Question</h2>
+            <form action="#">
+                <div class="pr_ad_addquestion_item">
+                    <label for="question">Question:</label>
+                    <input type="text" id="question" name="question">
+                </div>
+                <div class="pr_ad_addquestion_item">
+                    <label for="choice1">Choice 1:</label>
+                    <input type="text">
+                    <input
+                        type="radio"
+                        id="choice1"
+                        name="choice"
+                        value="choice1"
+                    >
+                </div>
+                <div class="pr_ad_addquestion_item">
+                    <label for="choice2">Choice 2:</label>
+                    <input type="text">
+                    <input
+                        type="radio"
+                        id="choice2"
+                        name="choice"
+                        value="choice2"
+                    >
+                </div>
+                <div class="pr_ad_addquestion_item">
+                    <label for="choice3">Choice 3:</label>
+                    <input type="text">
+                    <input
+                        type="radio"
+                        id="choice3"
+                        name="choice"
+                        value="choice3"
+                    >
+                </div>
+                <div class="pr_ad_addquestion_item">
+                    <label for="choice4">Choice 4:</label>
+                    <input type="text">
+                    <input
+                        type="radio"
+                        id="choice4"
+                        name="choice"
+                        value="choice4"
+                    >
+                </div>
+                <div class="pr_ad_addquestion_item">
+                    <label for="marks">Marks</label>
+                    <input type="number" id="marks" name="marks">
+                </div>
+                <div class="pr_ap_submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

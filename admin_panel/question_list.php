@@ -7,12 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/sidebar.css">
         <link rel="stylesheet" href="css/top.css">
-        <link rel="stylesheet" href="css/course.css">
+        <link rel="stylesheet" href="css/question_list.css">
         <title>admin_panel</title>
     </head>
     <body>
     <?php include 'top.html'; ?>
     <?php include 'sidebar.html'; ?>
-    <?php include 'course.html'; ?>
+    <?php include 'question_list.html'; ?>
+
     </body>
 </html>
+
