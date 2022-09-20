@@ -1,6 +1,77 @@
 .pr_ap_student_main {
     position: relative;
     left: 270px;
+    top:70px;
     width: 81%;
     margin-top: 20px;
+}
+
+.pr_ap_student_table{
+    width: 95%;
+    margin: auto;
+}
+
+#students {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#students td, #students th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+
+
+#students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4B8FF5;
+    color: white;
+}
+.pr_ap_student_name{
+    width: 20%;
+}
+.pr_ap_student_email{
+    width: 10%;
+}
+.pr_ap_student_subscribed_course{
+    width: 20%;
+}
+
+.pr_ap_student_action{
+    width: 30%;
+}
+.pr_ap_viewbtn{
+    background-color: skyblue;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    cursor: pointer;
+}
+.pr_ap_viewbtn:hover{
+    background-color: rgb(211, 211, 18);
+}
+.pr_ap_student_action_td{
+ text-align: center;
+}
+.pr_ap_removebtn{
+    background-color: #B70707;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    cursor: pointer;
+}
+.pr_ap_removebtn:hover{
+    background-color: red;
 }

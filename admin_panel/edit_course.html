@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/add_course.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pr_ap_top_maincontainer">
+        <a href="dashboard.php">
+            <div class="pr_ap_top_logo">
+                <img src="image/Mask Group 16.png" alt="image_here">
+            </div>
+        </a>
+        <div class="pr_ap_top_blank"></div>
+        <div class="pr_ap_top_logout">
+            <button>Logout</button>
+        </div>
+    </div>
+    <div class="pr_ap_side_main" id="sidebar_contents">
+        <div class="pr_ap_side_profile">
+            <div class="pr_ap_side_pp">
+                <img src="image/man (2).png" alt="">
+            </div>
+            <div class="pr_ap_side_name">
+                <P>Admin</P>
+            </div>
+        </div>
+        <a href="dashboard.php">
+            <div class="pr_ap_side_dashboard">
+                <p>Dashboard</p>
+            </div>
+        </a>
+        <a href="course.php">
+            <div class="pr_ap_side_Course">
+                <p>Course</p>
+            </div>
+        </a>
+        <a href="question.php">
+            <div class="pr_ap_side_Questions">
+                <p>Questions</p>
+            </div>
+        </a>
+        <a href="student.php">
+            <div class="pr_ap_side_student">
+                <p>Students</p>
+            </div>
+        </a>
+    </div>
+    <div class="pr_ad_addcourse_main">
+        <h2>Edit Course</h2>
+        <form action="#">
+            <div class="pr_ad_addcourse_item">
+                <label for="name">Course Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                  
+                >
+            </div>
+            <div class="pr_ad_addcourse_item">
+                <label for="questions">No. of Questions:</label>
+                <input
+                    type="number"
+                    id="questions"
+                    name="No_of_Q"
+                   
+                >
+            </div>
+            <div class="pr_ad_addcourse_item">
+                <label for="fullmarks">F.M:</label>
+                <input
+                    type="number"
+                    id="fullmarks"
+                    name="fullmarks"
+                   
+                >
+            </div>
+            <div class="pr_ad_addcourse_item">
+                <label for="passmarks">P.M:</label>
+                <input
+                    type="number"
+                    id="passmarks"
+                    name="passmarks"
+                    
+                >
+            </div>
+            <div class="pr_ad_addcourse_item">
+                <label for="time">Time in Minutes:</label>
+                <input
+                    type="number"
+                    id="time"
+                    name="time"
+                   
+                >
+            </div>
+            <div class="pr_ap_submit">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>

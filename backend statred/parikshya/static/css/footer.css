@@ -21,15 +21,21 @@
     padding: 10px 0px;
 }
 
-.pr_footer_content_box_component li {
+.li_footer {
     height: 27px;
-    width: 18px;
+    width: 100%;
     margin: 12px 0px 12px 0px;
+   display:flex;
 }
 
-.pr_footer_content_box_component li img {
-    width: 100%;
+.li_footer img {
+    width: 23px;
     height: 100%;
+}
+.li_footer p{
+width:90%;
+margin-left:20px;
+font-size:large;
 }
 
 .pr_footer_right_and_policy {

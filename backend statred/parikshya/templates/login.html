@@ -6,15 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
         <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
         <title>Document</title>
     </head>
     <body>
+    {% include 'header.html' %}
         <div class="pr_login_maincontainer">
             <div class="pr_login_maincontainer_content">
                 <div class="pr_login_image_container">
                     <div class="pr_login_image">
-                        <img src="{% static 'image/man (2).png' %}" alt="">
+                        <img src="{% static 'image/login.jpg' %}" alt="">
                     </div>
                 </div>
                 <div class="pr_login_textpart_container">
