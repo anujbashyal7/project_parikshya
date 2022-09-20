@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/add_course.css' %}">
+    <title>admin_panel</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ad_addcourse_main">
+    <h2>Add Course</h2>
+    <form action="#">
+        <div class="pr_ad_addcourse_item">
+            <label for="name">Course Name:</label>
+            <input
+                    type="text"
+                    id="name"
+                    name="name"
+
+            >
+        </div>
+        <div class="pr_ad_addcourse_item">
+            <label for="questions">No. of Questions:</label>
+            <input
+                    type="number"
+                    id="questions"
+                    name="No_of_Q"
+
+            >
+        </div>
+        <div class="pr_ad_addcourse_item">
+            <label for="fullmarks">F.M:</label>
+            <input
+                    type="number"
+                    id="fullmarks"
+                    name="fullmarks"
+
+            >
+        </div>
+        <div class="pr_ad_addcourse_item">
+            <label for="passmarks">P.M:</label>
+            <input
+                    type="number"
+                    id="passmarks"
+                    name="passmarks"
+
+            >
+        </div>
+        <div class="pr_ad_addcourse_item">
+            <label for="time">Time in Minutes:</label>
+            <input
+                    type="number"
+                    id="time"
+                    name="time"
+
+            >
+        </div>
+        <div class="pr_ap_submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

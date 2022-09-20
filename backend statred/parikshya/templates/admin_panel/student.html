@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/student.css' %}">
+    <title>admin_panel</title>
+</head>
+
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ap_student_main">
+    <h2>Students</h2>
+    <div class="pr_ap_student_table">
+        <table id="students">
+            <tr>
+                <th class="pr_ap_student_name">Name</th>
+                <th class="pr_ap_student_email">Email</th>
+                <th class="pr_ap_student_subscribed_course">Subscribed Course</th>
+                <th class="pr_ap_student_action">Action</th>
+            </tr>
+            <tr>
+                <td>Raja-ram Upreti</td>
+                <td>user2022@gamil.com</td>
+                <td>+2 Entrance</td>
+                <td class="pr_ap_student_action_td">
+                    <a href="{% url 'view_marks' %}">
+                        <button class="pr_ap_viewbtn">View Marks</button>
+                    </a>
+                    <button class="pr_ap_removebtn">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Raja-ram Upreti</td>
+                <td>user2022@gamil.com</td>
+                <td>+2 Entrance</td>
+                <td class="pr_ap_student_action_td">
+                    <a href="{% url 'view_marks' %}">
+                        <button class="pr_ap_viewbtn">View Marks</button>
+                    </a>
+                    <button class="pr_ap_removebtn">Remove</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

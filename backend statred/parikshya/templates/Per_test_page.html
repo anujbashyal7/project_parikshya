@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Per_test_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.min.css' %}">
+    <script src="js/main.js"></script>
+    <title>Parikshya</title>
+</head>
+<body>
+{% include 'header.html' %}
 <div class="pr_bigbox">
     <div class="pr_firsttext">
         <h1>Curve Sketching</h1>
@@ -44,11 +61,13 @@
         <h2>Click here to start the test</h2>
     </div>
     <div class="pr_forbuttons">
-        <a href="questions.php">
+        <a href="{% url 'questions_page' %}">
             <button class="button">START</button>
         </a>
-        <a href="3rdpage.php">
+        <a href="{% url 'per_category_page' %}">
             <button class="button2">CANCEL</button>
         </a>
     </div>
 </div>
+</body>
+</html>

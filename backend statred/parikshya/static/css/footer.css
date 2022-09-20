@@ -6,6 +6,7 @@
 
 .pr_footer_main_container {
     background: #212529;
+    width:100%;
     color: white;
     border-top: 2px solid #707070;
 }

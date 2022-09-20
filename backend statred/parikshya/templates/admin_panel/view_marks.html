@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/view_marks.css' %}">
+    <title>view_marks</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ap_view_marks_list_main">
+    <div class="pr_ap_view_marks_top">
+        <div class="pr_ap_view_marks_top_left">
+            <p>Marks List</p>
+        </div>
+
+    </div>
+    <div class="pr_ap_view_marks_table">
+        <table id="view_markss">
+            <tr>
+                <th class="pr_ap_view_marks_sn">S.N.</th>
+                <th class="pr_ap_view_marks_exam_name">Exam Name</th>
+                <th class="pr_ap_course_fm">F.M</th>
+                <th class="pr_ap_course_pm">P.M</th>
+                <th class="pr_ap_view_marks_om">Marks Obtaioned</th>
+                <th class="pr_ap_view_marks_position">Position</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>BE Entrance Paper-1</td>
+                <td>100</td>
+                <td>40</td>
+                <td>55</td>
+                <td> 101 th</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BE Entrance Paper-1</td>
+                <td>100</td>
+                <td>40</td>
+                <td>55</td>
+                <td> 101 th</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>BE Entrance Paper-1</td>
+                <td>100</td>
+                <td>40</td>
+                <td>55</td>
+                <td> 101 th</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>BE Entrance Paper-1</td>
+                <td>100</td>
+                <td>40</td>
+                <td>55</td>
+                <td> 101 th</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

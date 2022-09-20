@@ -22,6 +22,7 @@ a{
 
 .pr_packages_content {
     padding: 15px 0px;
+    width:100%;
 }
 
 .pr_packages_content_boxes_box {
@@ -67,6 +68,7 @@ a{
     background: #000000;
     margin-top: 80px;
     height: 200px;
+    width:100%;
 }
 
 .pr_packages_get_started_text {

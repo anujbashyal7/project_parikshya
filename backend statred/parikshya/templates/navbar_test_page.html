@@ -1,15 +1,18 @@
+{% load static %}
 <div class="pr_navbar_testpage_maincontainer">
     <div class="pr_navbar_testpage_col1">
-            <div class="pr_navbar_col1_logo">
-                <a href="index.php">
-                    <img src="image/Mask Group 16.png" alt="websitelogo">
-                </a>
-            </div>
+        <div class="pr_navbar_col1_logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'image/Mask Group 16.png' %}" alt="websitelogo">
+            </a>
+        </div>
     </div>
     <div class="pr_navbar_testpage_null"></div>
     <div class="pr_navbar_testpage_col2">
         <div class="pr_navbar_testpage_col2_attempt">
-            <h3>Attempted:0/25</h3>
+            <h3>Attempted:</h3>
+            <h3 id="selected">0</h3>
+            <h3>/25</h3>
         </div>
         <div class="pr_navbar_testpage_col2_time">
             <div class="pr_navbar_testpage_col2_time_hr">

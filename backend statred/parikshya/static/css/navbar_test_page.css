@@ -35,6 +35,7 @@
 .pr_navbar_testpage_col2_attempt {
     font-size: larger;
     width: 20%;
+    display:flex;
   
 }
 

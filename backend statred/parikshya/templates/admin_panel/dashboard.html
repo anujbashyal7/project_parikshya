@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/dashboard.css' %}">
+    <title>admin_panel</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ap_dashboard_main">
+    <div class=" npap_header_maincontent">
+        <div class="npap_dashboard_container">
+            <div class="npap_dashboardleft">
+                <h1>Dashboard</h1>
+                <p>Hi Admin, we help you manage your website Parikshya.com</p>
+            </div>
+            <div class="npap_dashboardright">
+                <div class="npap_dashboard_profile">
+                    <img src="{% static 'image/man (2).png' %}" alt="Image_here">
+                </div>
+                <div class="npap_dashboard_text">
+                    <p>Hello Sir</p>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

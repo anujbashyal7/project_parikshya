@@ -1,0 +1,72 @@
+.pr_ap_dashboard_main {
+    position: relative;
+    left: 17%;
+    top: 70px;
+    width: 83%;
+    margin-top: 20px;
+}
+
+.npap_dashboard_container {
+    width: 100%;
+    height: 110px;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+
+.npap_dashboardleft {
+    width: 82%;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px 10px 10px 25px;
+}
+
+.npap_dashboardleft h1 {
+    margin-left: 27px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+}
+
+.npap_dashboardleft p {
+    margin-left: 27px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    font-size: 18px;
+}
+
+.npap_dashboardright {
+    width: 18%;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px 25px 10px 10px;
+    display: flex;
+}
+
+.npap_dashboard_profile {
+    width: 30%;
+    padding: 12px 0px 12px 12px;
+}
+
+.npap_dashboard_profile img {
+    width: 85%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.npap_dashboard_text {
+    width: 70%;
+    padding-top: 15px;
+}
+
+.npap_dashboard_text p {
+    margin-left: 5px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.2em;
+    font-size: 18px;
+}
+
+.npap_dashboard_text span {
+    margin-left: 5px;
+    font-size: 15px;
+}

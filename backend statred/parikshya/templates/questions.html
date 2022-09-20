@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/questions.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar_test_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.min.css' %}">
+    <title>Parikshya</title>
+</head>
+<body>
+{% include 'navbar_test_page.html' %}
 <div class="pr_question_maincontainer">
     <div class="pr_question_heading">
         <h2>CURVE SKETCHING</h2>
@@ -10,20 +27,20 @@
             </p>
         </div>
         <div class="pr_question_QAbox_tickbox">
-            <input type="checkbox">
+            <input class="checkbox" type="checkbox">
         </div>
         <div class="pr_question_QAbox_ans">
             <form>
-                <input type="radio" name="mcqs" value="">
+                <input id="Ronaldo" type="radio" name="mcqs" value="">
                 <label for="Ronaldo">Ronaldo</label>
                 <br>
-                <input type="radio" name="mcqs" value="">
+                <input id="Messi" type="radio" name="mcqs" value="">
                 <label for="Messi">Messi</label>
                 <br>
-                <input type="radio" name="mcqs" value="">
+                <input id="Neymar" type="radio" name="mcqs" value="">
                 <label for="Neymar">Neymar</label>
                 <br>
-                <input type="radio" name="mcqs" value="">
+                <input id="Mbappe" type="radio" name="mcqs" value="">
                 <label for="Mbappe">Mbappe</label>
             </form>
         </div>
@@ -36,7 +53,7 @@
             </p>
         </div>
         <div class="pr_question_QAbox_tickbox">
-            <input type="checkbox">
+            <input class="checkbox" type="checkbox">
         </div>
         <div class="pr_question_QAbox_ans">
             <form>
@@ -62,7 +79,7 @@
             </p>
         </div>
         <div class="pr_question_QAbox_tickbox">
-            <input type="checkbox">
+            <input class="checkbox" type="checkbox">
         </div>
         <div class="pr_question_QAbox_ans">
             <form>
@@ -85,9 +102,28 @@
         <button class="nex">NEXT</button>
     </div>
     <div class="pr_question_submit_buttons">
-        <a href="4thpage.php">
+        <a href="{% url 'per_category_page' %}">
             <button class="can">CANCEL</button>
         </a>
         <button class="sub">SUBMIT</button>
     </div>
 </div>
+</body>
+</html>
+
+<script>
+var checkboxes = document.querySelectorAll('.checkbox');
+var count = 0;
+
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener('click', function () {
+    if (this.checked == true) {
+      count++;
+    }
+    else {
+      count--;
+    }
+    document.getElementById('selected').innerHTML = count;
+  })
+}
+</script>

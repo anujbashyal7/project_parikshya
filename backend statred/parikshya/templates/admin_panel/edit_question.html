@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/edit_question.css' %}">
+    <title>edit_question</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ad_editquestion_main">
+    <h2>Edit Question</h2>
+    <form action="#">
+        <div class="pr_ad_editquestion_item">
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question">
+        </div>
+        <div class="pr_ad_editquestion_item">
+            <label for="choice1">Choice 1:</label>
+            <input type="text">
+            <input
+                    type="radio"
+                    id="choice1"
+                    name="choice"
+                    value="choice1"
+            >
+        </div>
+        <div class="pr_ad_editquestion_item">
+            <label for="choice2">Choice 2:</label>
+            <input type="text">
+            <input
+                    type="radio"
+                    id="choice2"
+                    name="choice"
+                    value="choice2"
+            >
+        </div>
+        <div class="pr_ad_editquestion_item">
+            <label for="choice3">Choice 3:</label>
+            <input type="text">
+            <input
+                    type="radio"
+                    id="choice3"
+                    name="choice"
+                    value="choice3"
+            >
+        </div>
+        <div class="pr_ad_editquestion_item">
+            <label for="choice4">Choice 4:</label>
+            <input type="text">
+            <input
+                    type="radio"
+                    id="choice4"
+                    name="choice"
+                    value="choice4"
+            >
+        </div>
+        <div class="pr_ad_editquestion_item">
+            <label for="marks">Marks</label>
+            <input type="number" id="marks" name="marks">
+        </div>
+        <div class="pr_ap_submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
