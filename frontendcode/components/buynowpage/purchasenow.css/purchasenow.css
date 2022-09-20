@@ -1,0 +1,101 @@
+body{
+    height: auto;
+    width: auto;
+    margin: 0%;
+}
+.pr_container1{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container2{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container3{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container4{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container5{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container6{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container7{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.pr_container8{
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.forimageleft{
+    height: 200px;
+    width: 270px;
+}
+.fortextpart{
+    background-color: rgb(224, 217, 217);
+    height: 100%;
+    width: 73.5%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.pr_titletext{
+    margin: 15px 0px 0px 20px;
+}
+.subjecttext{
+    color: #cc2c2c;
+}
+.availabletests{
+    color: #807777;
+}
+.pr_forbutton{
+    height: 45px;
+    width: 15%;
+    /* background-color: red; */
+    margin: 48px 0px 0px 11px;
+}
+.button{
+    height: 100%;
+    width: 100%;
+    background-color:#29df66;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1.5px solid black;
+    border-radius: 3px;
+}
+.button:hover {background-color: #3b8f46}
