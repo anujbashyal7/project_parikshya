@@ -7,6 +7,7 @@ urlpatterns = [
     path('mock_test', views.mock_test_page, name='mock_test_page'),
     path('login', views.login_page, name='login_page'),
     path('registration', views.registration_page, name='registration_page'),
+    path('logout/', views.logout_user, name="logout"),
     path('per_catagory_test_page', views.per_category_page, name='per_category_page'),
     path('test_page', views.test_page, name='test_page'),
     path('questions_page', views.questions_page, name='questions_page'),
