@@ -31,6 +31,23 @@ h3{
 
 }
 .pr_esewa{
-    margin: 2px 2px 2px 2px;
-   /* padding: 5px 0px 0px 20px; */
+    /* margin: 2px 2px 2px 2px; */
+   padding: 5px 0px 0px 10px;
 }
+.pr_imepay{
+    padding: 5px 0px 0px 16px;
+}
+.pr_khalti{
+    padding: 5px 0px 0px 16px;
+}
+.pr_btn1{
+    height: 12%;
+    width: 200px;
+    background: rgb(94, 230, 94);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 285px;
+    margin-top: 40px;
+}
+.pr_btn1:hover{background-color: rgb(2, 177, 2);}

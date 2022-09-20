@@ -43,7 +43,7 @@ body {
 
 .pr_register_textpart_container {
     width: 50%;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 .pr_register_Head{
     font-size: large;
