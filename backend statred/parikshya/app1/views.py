@@ -1,5 +1,8 @@
 from django.contrib.auth import logout, authenticate, login
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from numpy.ma import ids
 
@@ -14,6 +17,7 @@ def index(request):
     return render(request, 'client/index.php', context)
 
 
+@login_required(login_url='login_page')
 def mock_test_page(request):
     course_query = Course.objects.all()
     context = {'course_query': course_query}
@@ -21,38 +25,48 @@ def mock_test_page(request):
 
 
 def login_page(request):
-    if request.user.is_authenticated:
-        return redirect('mock_test_page')
-    else:
-        if request.method == 'POST':
-            username = request.POST.get('username')
-            password = request.POST.get('password')
+    form = CreateUserForm()
+    return render(request, 'login_and_register/login.html', {'form': form})
 
-            user = authenticate(request, username=username, password=password)
 
-            if user is not None:
-                login(request, user)
-                return redirect('mock_test_page')
-            else:
-                messages.info(request, 'Username OR password is incorrect')
+def login_post(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password1')
 
-    return render(request, 'login_and_register/login.html')
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return redirect('mock_test_page')
+        else:
+            messages.info(request, 'Username OR password is incorrect')
+            return redirect('login_page')
 
 
 def registration_page(request):
-    if request.user.is_authenticated:
-        return redirect('mock_test_page')
-    else:
-        form = CreateUserForm()
-        if request.method == 'POST':
-            form = CreateUserForm(request.POST)
-            if form.is_valid():
-                form.save()
-                user = form.cleaned_data.get('username')
-                messages.success(request, 'Account was created for ' + user)
+    form = CreateUserForm()
+    return render(request, 'login_and_register/register.html', {'form': form})
+
+
+def registration_post(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+        email = request.POST['email']
+        if password1 == password2:
+            if User.objects.filter(username=username).exists():
+                messages.error(request, "username taken")
+                return redirect('registration_page')
+            else:
+                student_query = User.objects.create_user(username=username, password=password1, email=email)
+                student_query.save()
+                print('User created')
                 return redirect('login_page')
-        context = {'form': form}
-    return render(request, 'login_and_register/register.html', context)
+        else:
+            messages.error(request, "Password doesnot matched!!!")
+            return redirect('registration_page')
 
 
 def logout_user(request):
