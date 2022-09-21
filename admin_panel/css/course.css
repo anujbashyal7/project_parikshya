@@ -28,7 +28,7 @@
 }
 
 .pr_ap_course_top_right button {
-    background-color: #60C2BC;
+    background-color: #3ef0e4;
     color: black;
     font-size: medium;
     font-weight: bold;
@@ -40,7 +40,7 @@
 }
 
 .pr_ap_course_top_right button:hover {
-    background-color: #F37F25;
+    background-color: #aa7f5e;
 }
 .pr_ap_course_table{
     width: 95%;
@@ -86,7 +86,7 @@
     width: 18%;
 }
 .pr_ap_deletebtn{
-    background-color: #B70707;
+    background-color: #ff2d2d;
     color: black;
     font-size: medium;
     font-weight: bold;
@@ -98,7 +98,7 @@
 
 }
 .pr_ap_editbtn{
-    background-color: lightgreen;
+    background-color: #2dff2d;
     color: black;
     font-size: medium;
     font-weight: bold;
@@ -109,8 +109,8 @@
     cursor: pointer;
 }
 .pr_ap_deletebtn:hover{
-    background-color: red;
+    background-color: rgb(224, 96, 96);
 }
 .pr_ap_editbtn:hover{
-    background-color: rgb(211, 211, 18);
+    background-color: rgb(157, 238, 146);
 }
