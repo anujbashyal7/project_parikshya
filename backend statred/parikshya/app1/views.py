@@ -72,23 +72,28 @@ def logout_user(request):
     logout(request)
     return redirect('login_page')
 
+
 @login_required(login_url='login_page')
 def per_category_page(request):
     return render(request, 'per_cat_available_test.html')
+
 
 @login_required(login_url='login_page')
 def test_page(request):
     return render(request, 'Per_test_page.html')
 
+
 @login_required(login_url='login_page')
 def questions_page(request):
     return render(request, 'question1.html')
+
 
 @login_required(login_url='login_page')
 def purchasenow_page(request):
     course_for_purchase = Course.objects.all()
     context = {'course_for_purchase': course_for_purchase}
     return render(request, 'purchasenow.html', context)
+
 
 @login_required(login_url='login_page')
 def payment_options(request):

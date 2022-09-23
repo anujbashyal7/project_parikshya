@@ -87,16 +87,30 @@ margin-top: 24px;
 }
 
 .pr_navbar_col3_item3 {
-    width:33.33%;
-margin-top: 24px;
+    width:65px;
+    height:40px;
     cursor: pointer;
-        display:none;
-
+margin-right:20px;
+margin: 12px 20px 0px 0px;
+text-align:center;
+}
+.pr_navbar_col3_item3 h3 {
+width:100%;
+height:100%;
+position:relative;
+top:8px;
+}
+.pr_navbar_col3_item3_name{
+background-color:#212529;
+border-radius:50%;
+margin-top:2px;
+height:100%;
+width:100%;
 }
 .pr_navbar_col3_item4{
     font-weight: bold;
-    width: 33.33%;
-    background-color: #46b8da;
+    width: 40%;
+    background-color: #004d64;
     cursor: pointer;
     justify-content: center;
     text-align: center;
