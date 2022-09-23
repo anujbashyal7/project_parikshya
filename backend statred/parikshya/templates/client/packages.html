@@ -1,8 +1,10 @@
 <!-- packages and get started html Started -->
 {% load static %}
 <div class="pr_packages_content">
+
     <div class="pr_packages_content_heading">
-        <h3>PACKAGES</h3>
+
+        <h3>COURSES</h3>
         <div class="pr_packages_content_heading_hr"></div>
     </div>
     <div class="pr_packages_content_boxes">
@@ -13,7 +15,6 @@
             </div>
             <div class="pr_packages_content_boxes_box_text">
                 <p>{{i.Course_Name}}</p>
-
             </div>
         </div>
         {% endfor %}
@@ -45,10 +46,10 @@
 </div>
 <div class="pr_packages_get_started">
     <div class="pr_packages_get_started_text">
-        <h3>START YOUR JOURNEY. ENROLL NOW.</h3>
+        <h3>START YOUR JOURNEY TODAY.</h3>
         <div class="pr_package_buy_now">
-            <a href="{% url 'registration_page' %}">
-                <span>BUY NOW
+            <a href="{% url 'purchasenow_page' %}">
+                <span> ENROLL NOW
                     <i class="fa-solid fa-book"></i>
                 </span>
             </a>

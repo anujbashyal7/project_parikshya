@@ -53,3 +53,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+.pr_ad_addquestion_choices{
+width:25%;
+}

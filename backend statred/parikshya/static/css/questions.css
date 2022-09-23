@@ -154,3 +154,36 @@
     font-size: xx-large;
     text-align: center;
 }
+.pr_question_submit_buttons_responsive{
+display:none;}
+@media screen and (max-width: 600px) {
+.pr_fordisplayquestion{
+display:none;}
+.pr_question_submit_buttons_responsive{
+display:block;}
+.pr_question_submit_buttons{
+    display: flex;
+    /* float: right; */
+    /* justify-content: right; */
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+.pr_question_submit_buttons_responsive button{
+    width: 7rem;
+    padding: 9px 0px;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    margin: 10px 3px;
+}
+.pr_question_submit_buttons_responsive .can {
+    background: #FF0011;
+}
+.pr_question_submit_buttons_responsive .sub {
+    background: #4FC92B;
+}
+.pr_onlyforquestionsandans{
+width:100%;
+}
+}

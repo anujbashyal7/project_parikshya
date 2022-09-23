@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/main_course.css' %}">
+    <title>course</title>
+</head>
+<body>
+
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ap_main_course_main">
+    <div class="pr_ap_main_course_top">
+        <div class="pr_ap_main_course_top_left">
+            <p>Main Courses</p>
+        </div>
+    </div>
+    <div class="pr_ap_main_course_table">
+        <table id="courses">
+            <tr>
+                <th class="pr_ap_main_course_name">Name</th>
+                <th class="pr_ap_main_course_que">Question Sets</th>
+                <th class="pr_ap_main_course_price">Price</th>
+                <th class="pr_ap_main_course_action">Action</th>
+            </tr>
+            <tr>
+                <td>IOE Entrance</td>
+                <td>5</td>
+                <td>5000</td>
+                <td class="pr_ap_main_course_action_td">
+                    <button class="pr_ap_deletebtn">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>IOM Entrance</td>
+                <td>9</td>
+                <td>7000</td>
+                <td class="pr_ap_main_course_action_td">
+                    <button class="pr_ap_deletebtn">Remove</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

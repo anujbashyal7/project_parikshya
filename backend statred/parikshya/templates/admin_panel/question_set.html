@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/question_set.css' %}">
+    <title>question_set_page</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ap_question_set_list_main">
+    <div class="pr_ap_question_set_top">
+        <div class="pr_ap_question_set_top_left">
+            <p>Course Name(question_set_list_page)</p>
+        </div>
+        <div class="pr_ap_top_null"></div>
+        <div class="pr_ap_question_set_top_right">
+            <a href="{% url 'add_question_set' %}">
+                <button>Add New Question Set</button>
+            </a>
+        </div>
+    </div>
+    <div class="pr_ap_question_set_table">
+        <table id="question_sets">
+            <tr>
+                <th class="pr_ap_question_set_sn">S.N.</th>
+                <th class="pr_ap_question_set_Question">Name</th>
+                <th class="pr_ap_course_que">Total Questions</th>
+                <th class="pr_ap_course_fm">F.M</th>
+                <th class="pr_ap_course_pm">P.M</th>
+                <th class="pr_ap_question_time">Time(Minutes)</th>
+                <th class="pr_ap_question_set_action">Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Question-Set 1</td>
+                <td>100</td>
+                <td>140</td>
+                <td>60</td>
+                <td>90</td>
+                <td class="pr_ap_question_set_action_td">
+                    <a href="{% url 'question_list' %}">
+                        <button class="pr_ap_viewbtn">View</button>
+                    </a>
+                    <a href="{% url 'edit_question_set' %}">
+                        <button class="pr_ap_editbtn">Edit</button>
+                    </a>
+                    <a href="#">
+                        <button class="pr_ap_deletebtn">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Question-Set 2</td>
+                <td>150</td>
+                <td>200</td>
+                <td>120</td>
+                <td>90</td>
+                <td class="pr_ap_question_set_action_td">
+                    <a href="{% url 'question_list' %}">
+                        <button class="pr_ap_viewbtn">View</button>
+                    </a>
+                    <a href="{% url 'edit_question_set' %}">
+                        <button class="pr_ap_editbtn">Edit</button>
+                    </a>
+                    <a href="#">
+                        <button class="pr_ap_deletebtn">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <!--            <tr>-->
+            <!--                <td>1</td>-->
+            <!--                <td>What is SI unit of pressure?</td>-->
+            <!--                <td>-->
+            <!--                    <p>Newton</p>-->
+            <!--                    <p>Pascal</p>-->
+            <!--                    <p>Kilogram</p>-->
+            <!--                    <p>Meter</p>-->
+            <!--                </td>-->
+            <!--                <td>2</td>-->
+            <!--                <td class="pr_ap_question_set_action_td">-->
+            <!--                    <a href="{% url 'edit_question' %}">-->
+            <!--                        <button class="pr_ap_editbtn">Edit</button>-->
+            <!--                    </a>-->
+            <!--                    <a href="#">-->
+            <!--                        <button class="pr_ap_deletebtn">Delete</button>-->
+            <!--                    </a>-->
+            <!--                </td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>1</td>-->
+            <!--                <td>What is SI unit of pressure?</td>-->
+            <!--                <td>-->
+            <!--                    <p>Newton</p>-->
+            <!--                    <p>Pascal</p>-->
+            <!--                    <p>Kilogram</p>-->
+            <!--                    <p>Meter</p>-->
+            <!--                </td>-->
+            <!--                <td>2</td>-->
+            <!--                <td class="pr_ap_question_set_action_td">-->
+            <!--                    <a href="edit_question.html">-->
+            <!--                        <button class="pr_ap_editbtn">Edit</button>-->
+            <!--                    </a>-->
+            <!--                    <a href="#">-->
+            <!--                        <button class="pr_ap_deletebtn">Delete</button>-->
+            <!--                    </a>-->
+            <!--                </td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>1</td>-->
+            <!--                <td>What is SI unit of pressure?</td>-->
+            <!--                <td>-->
+            <!--                    <p>Newton</p>-->
+            <!--                    <p>Pascal</p>-->
+            <!--                    <p>Kilogram</p>-->
+            <!--                    <p>Meter</p>-->
+            <!--                </td>-->
+            <!--                <td>2</td>-->
+            <!--                <td class="pr_ap_question_set_action_td">-->
+            <!--                    <a href="edit_question.html">-->
+            <!--                        <button class="pr_ap_editbtn">Edit</button>-->
+            <!--                    </a>-->
+            <!--                    <a href="#">-->
+            <!--                        <button class="pr_ap_deletebtn">Delete</button>-->
+            <!--                    </a>-->
+            <!--                </td>-->
+            <!--            </tr>-->
+        </table>
+    </div>
+</div>
+</body>
+</html>

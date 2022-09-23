@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-weight: bold;
-    margin: 0;
+    margin-bottom:25px;
 }
 
 h2 {
@@ -64,13 +64,13 @@ button.ghost {
 
 form {
     background-color: #FFFFFF;
-    display: flex;
+margin-top:25px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
     height: 100%;
-    text-align: center;
+
 }
 
 .container input {
@@ -180,7 +180,6 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
     text-align: center;
     top: 0;
     height: 100%;
@@ -264,6 +263,9 @@ form {
 			width: 100%;
 			background: #33ccff !important;
 			color: white !important;
+			font-size:18px;
+			font-weight:bold;
+			cursor:pointer;
 		}
 		.login_btn:focus {
 			box-shadow: none !important;
@@ -276,10 +278,45 @@ form {
 			background: #f7ba5b !important;
 			color: white !important;
 			border: 0 !important;
-			border-radius: 0.25rem 0 0 0.25rem !important;
+		/*	border-radius: 0.25rem 0 0 0.25rem !important; */
+			text-align:center;
 		}
 		.input_user,
 		.input_pass:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
 		}
+.input-group input{
+height:11px;
+width:80%;
+}
+.input-group-append {
+width:100%;
+
+height: 32px;
+display:flex;
+
+}
+.input-group-append span{
+width:10%;
+height:80%;
+}
+.input-group-append p{
+    width:70%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size:medium;
+    padding: 3px 10px
+}
+.fas, .fa-solid {
+margin-top:7px
+}
+.input-group{
+margin-bottom: 10px;
+}
+form p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;}
+.Forgot_pw{
+margin-left:23%;
+}

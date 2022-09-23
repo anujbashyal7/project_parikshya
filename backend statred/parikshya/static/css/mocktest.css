@@ -39,7 +39,7 @@
 .pr_mocktest_testbox {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 28rem;
+  /*  height: 28rem; */
     width: 100%;
 }
 
@@ -93,6 +93,9 @@
 /* above footer css  */
 .pr_mocktest_above_footer {
     padding: 5px 37px;
+}
+.pr_mocktest_above_footer a{
+text-decoration:none;
 }
 
 .pr_mocktest_above_footer_lang_h3 {

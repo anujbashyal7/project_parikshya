@@ -99,3 +99,13 @@ hr.one {
 }
 
 /* css for 4th page ends here */
+
+
+@media screen and (max-width: 600px) {
+
+.pr_bigbox {
+width:100%;
+margin:0px;
+}
+
+}

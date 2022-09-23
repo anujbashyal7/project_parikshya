@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/payment_options.css' %}">
+        <title>payment_options</title>
+    </head>
+    <body>
+        <div class="pr_fullcontainer">
+            <div class="pr_midbigbox">
+                <h1>Confirm Your Payment</h1>
+                <hr>
+                <div class="pr_choose">
+                    <h3>Our Payment Options</h3>
+                </div>
+                <div class="pr_forimagecontiner">
+                    <a href="#">
+                        <img class="pr_buynow_item" src="{% static 'image/esewa-icon-large.png' %}" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="pr_buynow_item" src="{% static 'image/ime.png' %}" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="pr_buynow_item" src="{% static 'image/unnamed1.png' %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -229,13 +229,17 @@
                 <button class="sub">SUBMIT</button>
             </div>
         </div>
-
     </div>
     <div class="pr_question_page_buttons">
         <button class="prev">PREVIOUS</button>
         <button class="nex">NEXT</button>
     </div>
-
+    <div class="pr_question_submit_buttons_responsive">
+        <a href="{% url 'per_category_page' %}">
+            <button class="can">CANCEL</button>
+        </a>
+        <button class="sub">SUBMIT</button>
+    </div>
 </div>
 </body>
 
@@ -256,5 +260,7 @@ for (var i = 0; i < checkboxes.length; i++) {
     document.getElementById('selected').innerHTML = count;
   })
 }
+
+
 
 </script>

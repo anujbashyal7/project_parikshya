@@ -13,4 +13,6 @@ urlpatterns = [
     path('per_catagory_test_page', views.per_category_page, name='per_category_page'),
     path('test_page', views.test_page, name='test_page'),
     path('questions_page', views.questions_page, name='questions_page'),
+    path('purchasenow_page', views.purchasenow_page, name='purchasenow_page'),
+    path('payment_options', views.payment_options, name='payment_options'),
 ]

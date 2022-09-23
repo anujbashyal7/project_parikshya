@@ -1,0 +1,132 @@
+.pr_ap_question_set_list_main{
+    position: relative;
+    left: 270px;
+    top:70px;
+    width: 81%;
+    margin-top: 20px;
+}
+.pr_ap_question_set_top {
+    width: 100%;
+    display: flex;
+    height: 70px;
+}
+
+.pr_ap_question_set_top_left {
+    width: 30%;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.pr_ap_top_null {
+    width: 55%;
+}
+
+.pr_ap_question_set_top_right {
+    width: 25%;
+}
+
+.pr_ap_question_set_top_right button {
+    background-color: #60C2BC;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 75%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.pr_ap_question_set_top_right button:hover {
+    background-color: #F37F25;
+}
+
+.pr_ap_question_set_table{
+    width: 95%;
+    margin: auto;
+}
+
+#question_sets {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#question_sets td, #question_sets th {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+
+
+
+#question_sets th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4B8FF5;
+    color: white;
+}
+.pr_ap_question_set_sn{
+    width:1%;
+}
+.pr_ap_question_set_Question{
+    width: 25%;
+}
+.pr_ap_course_que{
+    width: 5%;
+}
+.pr_ap_course_fm{
+    width: 5%;
+}
+.pr_ap_course_pm{
+width: 5%;
+}
+.pr_ap_question_time{
+width: 5%;
+}
+.pr_ap_question_set_action{
+    width: 30%;
+}
+.pr_ap_editbtn{
+    background-color: lightgreen;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+}
+.pr_ap_editbtn:hover{
+    background-color: rgb(211, 211, 18);
+}
+.pr_ap_question_set_action_td{
+ text-align: center;
+}
+.pr_ap_deletebtn{
+    background-color: #B70707;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+}
+.pr_ap_deletebtn:hover{
+    background-color: red;
+}
+.pr_ap_viewbtn {
+    background-color: skyblue;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+}

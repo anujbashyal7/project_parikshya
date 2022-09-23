@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/top.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin_panel/edit_question_sets.css' %}">
+    <title>edit_question_sets</title>
+</head>
+<body>
+{% include '../admin_panel/top.html' %}
+{% include '../admin_panel/sidebar.html' %}
+<div class="pr_ad_edit_question_sets_main">
+    <h2>Edit Question Sets</h2>
+    <form action="#">
+        <div class="pr_ad_edit_question_sets_item">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="pr_ad_edit_question_sets_item">
+            <label for="question">Total Questions:</label>
+            <input type="text" id="question" name="question">
+        </div>
+         <div class="pr_ad_edit_question_sets_item">
+            <label for="fm">F.M:</label>
+            <input type="text" id="fm" name="fm">
+        </div>
+         <div class="pr_ad_edit_question_sets_item">
+            <label for="pm">P.M:</label>
+            <input type="text" id="pm" name="pm">
+        </div>
+         <div class="pr_ad_edit_question_sets_item">
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time">
+        </div>
+        <div class="pr_ap_submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

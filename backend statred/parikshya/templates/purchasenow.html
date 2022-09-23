@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/purchasenow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar_logout.css' %}">
+    <title>Parikshya</title>
+</head>
+
+<body>
+{% include 'navbar_with logout.html' %}
+{% for i in course_for_purchase %}
+<div class="pr_container1">
+    <div class="forimageleft">
+        <img src="{{i.photo_img.url}}" alt="">
+    </div>
+    <div class="fortextpart">
+        <div class="fortextpart_main">
+            <div class="pr_titletext">
+                <h2 class="subjecttext">{{i.Course_Name}}</h2>
+                <p class="availabletests">{{i.Course_detail}}</p>
+            </div>
+            <div class="pr_forprice">
+                <span>Rs.</span>
+                <span>2000</span>
+            </div>
+        </div>
+        <div class="pr_forbutton">
+            <a href="{% url 'payment_options' %}">
+                <button class="button">SUBSCRIBE</button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<!--    <div class="pr_container2">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container3">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container4">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container5">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container6">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container7">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pr_container8">-->
+<!--        <div class="forimageleft"><img src="cbse-class-9-science-study-pack-500x500.jpg" alt=""></div>-->
+<!--        <div class="fortextpart">-->
+<!--            <div class="pr_titletext">-->
+<!--                <h2 class="subjecttext">CLASS 12</h2>-->
+<!--                <h2 class="availabletests">Details about test</h2>-->
+<!--            </div>-->
+<!--            <div class="pr_forbutton">-->
+<!--                <button class="button">BUY NOW</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</body>
+
+</html>

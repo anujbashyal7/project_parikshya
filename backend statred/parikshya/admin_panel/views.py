@@ -34,6 +34,10 @@ def course_page(request):
     return render(request, 'admin_panel/course.html')
 
 
+def main_course(request):
+    return render(request, 'admin_panel/main_course.html')
+
+
 def question_page(request):
     return render(request, 'admin_panel/questions.html')
 
@@ -52,6 +56,18 @@ def edit_course(request):
 
 def question_list(request):
     return render(request, 'admin_panel/question_list.html')
+
+
+def question_set(request):
+    return render(request, 'admin_panel/question_set.html')
+
+
+def add_question_set(request):
+    return render(request, 'admin_panel/add_question_set.html')
+
+
+def edit_question_set(request):
+    return render(request, 'admin_panel/edit_question_set.html')
 
 
 def add_question(request):

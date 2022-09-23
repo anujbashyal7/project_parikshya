@@ -20,28 +20,34 @@
         </div>
         <div class="pr_ap_top_null"></div>
         <div class="pr_ap_course_top_right">
-            <a href="{% url 'add_course' %}">
-                <button>Add New Course</button>
-            </a>
+            <div class="pr_ap_course_top_right_main">
+                <a href="{% url 'main_course' %}">
+                    <button class="pr_ap_main_coursebtn">Main Courses</button>
+                </a>
+            </div>
+            <div class="pr_ap_course_top_right_add">
+                <a href="{% url 'add_course' %}">
+                    <button class="pr_ap_course_top_right_button">Add New Course</button>
+                </a>
+            </div>
         </div>
     </div>
     <div class="pr_ap_course_table">
         <table id="courses">
             <tr>
                 <th class="pr_ap_course_name">Name</th>
-                <th class="pr_ap_course_que">Total Questions</th>
-                <th class="pr_ap_course_fm">F.M</th>
-                <th class="pr_ap_course_pm">P.M</th>
+                <th class="pr_ap_course_que">Question Sets</th>
                 <th class="pr_ap_course_price">Price</th>
                 <th class="pr_ap_course_action">Action</th>
             </tr>
             <tr>
                 <td>IOE Entrance</td>
-                <td>100</td>
-                <td>140</td>
-                <td>50</td>
+                <td>5</td>
                 <td>5000</td>
                 <td class="pr_ap_course_action_td">
+                    <a href="#">
+                        <button class="pr_ap_mainbtn">Main</button>
+                    </a>
                     <a href="{% url 'edit_course' %}">
                         <button class="pr_ap_editbtn">Edit</button>
                     </a>
@@ -50,11 +56,12 @@
             </tr>
             <tr>
                 <td>IOM Entrance</td>
-                <td>200</td>
-                <td>180</td>
-                <td>90</td>
+                <td>9</td>
                 <td>7000</td>
                 <td class="pr_ap_course_action_td">
+                    <a href="#">
+                        <button class="pr_ap_mainbtn">Main</button>
+                    </a>
                     <a href="{% url 'edit_course' %}">
                         <button class="pr_ap_editbtn">Edit</button>
                     </a>

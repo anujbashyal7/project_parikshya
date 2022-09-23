@@ -89,24 +89,28 @@
     </div>
     <div class="pr_mocktest_above_footer">
         <div class="pr_mocktest_above_footer_lang">
-            <div class="pr_mocktest_above_footer_lang_h3">
-                <h3>TEST PACKS</h3>
-            </div>
+            <a href="{% url 'purchasenow_page' %}">
+                <div class="pr_mocktest_above_footer_lang_h3">
+                    <h3>LIST OF PACKAGES</h3>
+                </div>
+            </a>
             <div class="pr_mocktest_language_hr"></div>
             <div class="pr_mocktest_above_footer_lang_p">
                 <p>A complete package to practice and get your preparation
                     with extra...</p>
             </div>
         </div>
-        <div class="pr_mocktest_above_footer_buy_course">
-            <div class="pr_mocktest_above_footer_buy_course_anycourse">
-                <h3>ANY <br> COURSE</h3>
+        <a href="{% url 'purchasenow_page' %}">
+            <div class="pr_mocktest_above_footer_buy_course">
+                <div class="pr_mocktest_above_footer_buy_course_anycourse">
+                    <h3>ANY <br> COURSE</h3>
+                </div>
+                <div class="pr_mocktest_above_footer_buy_course_buynow">
+                    <p> Buy Now </p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="pr_mocktest_above_footer_buy_course_buynow">
-                <p> Buy Now </p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-        </div>
+        </a>
     </div>
 </div>
 {% include 'footer.html' %}
