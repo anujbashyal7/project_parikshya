@@ -6,8 +6,11 @@
     <title>Login and Register</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
 </head>
 <body>
 {% include 'header.html' %}
@@ -106,6 +109,7 @@
 	signInButton.addEventListener('click', () => {
 		container.classList.remove("right-panel-active");
 	});
+
 </script>
 
 

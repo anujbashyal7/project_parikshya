@@ -27,12 +27,11 @@ a{
 }
 
 .pr_packages_content_boxes_box {
-    margin-top: 30px;
     background-color: #9B9B9B;
-    width: 95%;
+    width: 100%;
     height: 81%;
     border-radius: 17%;
-    margin: 30px auto;
+
     cursor: pointer;
 }
 
@@ -52,18 +51,17 @@ a{
 
 .pr_packages_content_boxes_box_text {
     text-align: center;
-    margin: 15px 0px;
     font-size: 30px;
-    line-height: 35px;
     padding-top: 12px;
+    height:20%;
 }
 
 .pr_packages_content_boxes {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
     justify-content: space-evenly;
-    height: 27rem;
-    margin:0px 50px;
+    margin:30px 50px;
+    height:525px;
 }
 
 .pr_packages_get_started {

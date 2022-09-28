@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar_logout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/profile_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.min.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <title>Profile_page</title>
+</head>
+<body>
+{% include 'navbar_with_logout.html' %}
+<div class="pr_profile_main_container">
+    <div class="pr_profile_top_name">
+        <h1>Hello, Raja-Ram Pandey</h1>
+    </div>
+    <div class="pr_profile_profile">
+        <div class="pr_profile_circle">
+            <a href="{% url 'profile_page' %}">
+                <div class="pr_profile_circle_name">
+                    <span>RP</span>
+                </div>
+            </a>
+        </div>
+        <div class="pr_profile_nameaddress">
+            <div class="pr_profile_name">
+                <h2>Raja-Ram Pandey</h2>
+            </div>
+            <div class="pr_profile_email">
+                <span>Email: rajarampandey079@gmail.com</span>
+            </div>
+            <div class="pr_profile_address">
+                <span>Address: Kalimati,Kathmandu</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+</body>
+
+</html>

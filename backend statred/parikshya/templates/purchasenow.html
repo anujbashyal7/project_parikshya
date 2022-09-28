@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/purchasenow.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar_logout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.min.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
     <title>Parikshya</title>
 </head>
 
@@ -22,6 +26,11 @@
             <div class="pr_titletext">
                 <h2 class="subjecttext">{{i.Course_Name}}</h2>
                 <p class="availabletests">{{i.Course_detail}}</p>
+                <div class="pr_forbutton_responsive">
+                    <a href="{% url 'payment_options' %}">
+                        <button class="button">SUBSCRIBE</button>
+                    </a>
+                </div>
             </div>
             <div class="pr_forprice">
                 <span>Rs.</span>

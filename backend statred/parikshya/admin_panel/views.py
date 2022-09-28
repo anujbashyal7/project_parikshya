@@ -1,9 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 
-from .forms import LoginForm
+from app1.models import Course
+from .forms import LoginForm, EditCourse
 
 
 def index(request):
@@ -59,7 +61,30 @@ def student_page(request):
 
 @login_required(login_url='ap_index')
 def add_course(request):
-    return render(request, 'admin_panel/add_course.html')
+    add_course_query = Course.objects.all()
+    form = EditCourse(request.POST)
+    context = {'add_course_query': add_course_query, 'form': form}
+    return render(request, 'admin_panel/add_course.html', context)
+
+
+def add_course_post(request, ):
+    if request.method == 'POST':
+        form = EditCourse(request.POST, request.FILES)
+        if form.is_valid():
+            Course_Name = form.cleaned_data.get('Course_Name')
+            question_sets = form.cleaned_data.get('question_sets')
+            Course_price = form.cleaned_data.get('Course_price')
+            photo_img = form.cleaned_data.get('photo_img')
+            Course_detail = form.cleaned_data.get('Course_detail')
+            add_course_query = Course.objects.create(Course_Name=Course_Name, question_sets=question_sets,
+                                                     Course_price=Course_price,
+                                                     Course_detail=Course_detail,
+                                                     photo_img=photo_img)
+
+            add_course_query.save()
+            return redirect('course_page')
+        else:
+            print(form.errors)
 
 
 @login_required(login_url='ap_index')

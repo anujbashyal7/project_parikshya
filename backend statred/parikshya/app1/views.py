@@ -1,11 +1,8 @@
 from django.contrib.auth import logout, authenticate, login
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
-from numpy.ma import ids
-
 from .forms import CreateUserForm
 from app1.models import Course
 
@@ -98,3 +95,13 @@ def purchasenow_page(request):
 @login_required(login_url='login_page')
 def payment_options(request):
     return render(request, 'payment_options.html')
+
+
+@login_required(login_url='login_page')
+def profile_page(request):
+    return render(request, 'profile_page.html')
+
+
+@login_required(login_url='login_page')
+def leaderboard_page(request):
+    return render(request, 'leaderboard_page.html')

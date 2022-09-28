@@ -1,0 +1,70 @@
+/* css for afternavbar_banner starts here  */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+color:none;
+text-decoration:none;
+}
+.pr_profile_main_container{
+height:100%;
+width:100%;
+}
+.pr_profile_top_name{
+height:100px;
+width:100%;
+background-color:#212529;
+color:white;
+text-align:center;
+
+}
+.pr_profile_top_name h1{
+position:relative;
+top:30px;
+}
+.pr_profile_profile{
+height:180px;
+width:50%;
+margin:auto;
+margin-top:72px;
+display:flex;
+}
+
+.pr_profile_circle {
+    width:150px;
+    height:150px;
+    cursor: pointer;
+text-align:center;
+
+}
+.pr_profile_circle span {
+width:100%;
+height:100%;
+position:relative;
+top:42px;
+color:white;
+font-size:56px;
+font-weight:bolder;
+}
+.pr_profile_circle_name{
+background-color:#212529;
+border-radius:50%;
+height:100%;
+width:100%;
+}
+.pr_profile_nameaddress{
+margin:31px 0px 0px 30px;
+}
+.pr_profile_email{
+margin-top:10px;
+}
+.pr_profile_address{
+margin-top:10px;
+}
+.pr_footer_main_container{
+position:fixed;
+bottom:0;
+}

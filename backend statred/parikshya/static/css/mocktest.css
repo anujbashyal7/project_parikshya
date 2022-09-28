@@ -48,7 +48,7 @@
 }
 
 .pr_mocktest_testbox_box {
-    height: 90%;
+    height: 80%;
     width: 95%;
     margin: auto;
     border: 1px solid #707070;
@@ -57,7 +57,7 @@
 }
 
 .pr_mocktest_testbox_box_img {
-    height: 60%;
+    height: 70%;
     width: 100%;
 }
 
@@ -70,6 +70,7 @@
 .pr_mocktest_testbox_box_text {
     text-align: center;
     color: white;
+    height:30%;
 }
 
 .pr_mocktest_testbox_box_text h3 {
@@ -80,10 +81,7 @@
     padding: 20px 0px;
 }
 
-.pr_mocktest_testbox_box_text_p {
-    line-height: 27px;
-    font-size: 20px;
-}
+
 
 .pr_mocktest_testbox_box:hover {
     background: #464748;

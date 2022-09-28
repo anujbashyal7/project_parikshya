@@ -1,5 +1,5 @@
 from django.urls import path
-
+from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
@@ -15,4 +15,6 @@ urlpatterns = [
     path('questions_page', views.questions_page, name='questions_page'),
     path('purchasenow_page', views.purchasenow_page, name='purchasenow_page'),
     path('payment_options', views.payment_options, name='payment_options'),
+    path('profile_page', views.profile_page, name='profile_page'),
+    path('leaderboard_page', views.leaderboard_page, name='leaderboard_page'),
 ]

@@ -1,11 +1,16 @@
+body{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 /* css for responsive navbar starts here */
 @media screen and (max-width: 600px) {
     .pr_navbar_col1 {
         width: 100%;
         height: 70px;
-
+        display:flex;
     }
-
+.pr_navbar_col1_logo{
+width:90%;
+}
     .pr_navbar_maincontainer {
         display: block;
         height: 135px;
@@ -37,6 +42,8 @@
         float: right;
         cursor: pointer;
         margin-right: 5px;
+        position:absolute;
+        right:0;
     }
 
     .pr_navbar_hamburger {
@@ -79,12 +86,39 @@
     #navbar_ham_myDIV{
         display: none;
     }
+    
+.pr_navbar_col3_item3_responsive {
+display:block;
+    width:10%;
+    height:36px;
+    cursor: pointer;
+margin-right:20px;
+margin: 12px 20px 0px 0px;
+text-align:center;
+}
+.pr_navbar_col3_item3_responsive h3 {
+width:100%;
+height:100%;
+position:relative;
+top:7px;
+}
+.pr_navbar_col3_item3_name_responsive{
+background-color: white;
+border-radius:50%;
+margin-top:2px;
+height:100%;
+width:100%;
+color:#212529;
+}
 }
 /* css for responsive navbar starts here */
 
 
 /* packages responsive css */
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 600px) {
+.pr_packages_content {
+    padding: 35px 0px;
+}
     .pr_packages_content_boxes {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -99,7 +133,7 @@
 
 
 /* responsive footer css starts here */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
     .pr_footer_right_and_policy {
         display: block;
@@ -123,3 +157,105 @@
     }
 }
 /* responsive footer css Ends here */
+
+/* responsive for purchase now */
+@media only screen and (max-width: 600px) {
+.pr_container1{
+width:90%;
+margin:auto;
+margin-top:50px;}
+
+.availabletests{
+display:none;
+}
+.pr_forbutton_responsive{
+    height: 45px;
+
+    display:block;
+
+    }
+.pr_forbutton{
+display:none;
+}
+}
+
+/* for per cat tests available */
+@media only screen and (max-width: 600px) {
+.pr_boxesfor_right{
+display:block;
+}
+ .pr_3rdpagebigbox h1{
+        font-size: large;
+    }
+    .pr_boxforstarttest{
+        margin: 10px 0px 0px 6%;
+        width: 20%;
+    }
+    .pr_3rdpagebigbox_item h2{
+        font-size: medium;
+    }
+    .pr_newdiv{
+    display:block;
+    height:105px;
+    }
+    .pr_newdiv h3{
+    font-size: small;
+    }
+    .pr_boxfornegativemark{
+    height: 67%;
+    }
+    .pr_boxfortime{
+        height: 67%;
+    }
+
+    .pr_boxforfullmarks{
+        height: 67%;
+    }
+    .pr_boxforpassmarks{
+        height: 67%;
+    }
+    .pr_boxforstarttest{
+          height: 55%;
+    width: 30%;
+    }
+
+    .pr_forpagination{
+        width: 70%;
+        margin: auto;
+
+    }
+    .pr_boxesfor_left{
+    width:100%;
+    }
+     .pr_boxesfor_right{
+    width:100%;
+    display:flex;
+    }
+}
+
+
+/* for leaderboard */
+@media only screen and (max-width: 600px) {
+.pr_leaderboard_main_container{
+width:95%;
+margin:auto;
+}
+.pr_leaderboard_profile_main_container{
+height:300px;
+}
+.pr_leaderboard_profile{
+width:60%;
+margin:auto;
+}
+.pr_leaderboard_userdata{
+width:90%;
+margin:auto;
+}
+}
+
+/* for profile page */
+@media screen and (max-width: 600px) {
+.pr_profile_profile{
+width:90%;
+}
+}

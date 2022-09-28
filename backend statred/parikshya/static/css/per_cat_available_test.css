@@ -20,7 +20,7 @@ text-decoration: none;
 }
 
 .pr_3rdpagebigbox {
-  height: 450px;
+  height: auto;
   width: 92%;
   background-color: #404040;
   margin: auto;
@@ -46,13 +46,18 @@ text-decoration: none;
 .pr_newdiv {
   height: 60px;
   width: 100%;
-  display: flex;
+display:flex;
 
+}
+.pr_boxesfor_left{
+  display: flex;
+    height: 60px;
+  width: 100%;
 }
 
 .pr_boxfornegativemark {
   height: 55%;
-  width: 18%;
+  width: 20%;
   background-color: #F37F25;
   margin: 10px 0px 0px 9px;
   border-radius: 3px;
@@ -135,15 +140,33 @@ text-decoration: none;
 
 .pr_boxforstarttest {
   height: 55%;
-  width: 12%;
+  width: 30%;
   background-color: #4B8FF5;
-  margin: 10px 0px 0px 32%;
+  margin: 10px 0px 0px 30px;
   border-radius: 3px;
 
 
 }
 
+
 .pr_boxforstarttest h3 {
+  text-align: center;
+  color: white;
+  margin: 5px;
+
+}
+.pr_boxforleaderboard {
+  height: 55%;
+  width: 30%;
+  background-color: #73c076;
+  margin: 10px 0px 0px 20%;
+  border-radius: 3px;
+
+
+}
+
+
+.pr_boxforleaderboard h3 {
   text-align: center;
   color: white;
   margin: 5px;
@@ -177,42 +200,12 @@ text-decoration: none;
   width: 30%;
   margin: 50px auto 0px auto;
 }
-@media screen and (max-width: 600px) {
-    .pr_3rdpagebigbox h1{
-        font-size: large;
-    }
-    .pr_boxforstarttest{
-        margin: 10px 0px 0px 6%;
-        width: 20%;
-    }
-    .pr_3rdpagebigbox_item h2{
-        font-size: medium;
-
-    }
-
-    .pr_newdiv h3{
-font-size: small;
-    }
-.pr_boxfornegativemark{
-    height: 67%;
+.pr_boxesfor_right{
+width:35%;
+display:flex;
 }
-    .pr_boxfortime{
-        height: 67%;
-    }
-
-    .pr_boxforfullmarks{
-        height: 67%;
-    }
-    .pr_boxforpassmarks{
-        height: 67%;
-    }
-    .pr_boxforstarttest{
-        height: 67%;
-    }
-
-    .pr_forpagination{
-        width: 70%;
-        margin: auto;
-
-    }
+.pr_boxesfor_left{
+width:65%;
+display:flex;
 }
+

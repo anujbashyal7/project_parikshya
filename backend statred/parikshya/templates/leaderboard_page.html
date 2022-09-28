@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar_logout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/leaderboard_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free-6.0.0-beta3-web/css/all.min.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+    <title>Parikshya</title>
+</head>
+
+<body>
+{% include 'navbar_with_logout.html' %}
+<div class="pr_leaderboard_main_container">
+    <div class="pr_leaderboard_exam_name">
+        <h2>(Course_name)-(Question_set)</h2>
+    </div>
+    <div class="pr_leaderboard_profile_main_container">
+        <div class="pr_leaderboard_profile">
+            <div class="pr_leaderboard_pic">
+                <div class="pr_profile_circle_name">
+                    <span>RP</span>
+                </div>
+            </div>
+            <div class="pr_leaderboard_userdata">
+                <div class="pr_leaderboard_name">
+                    <p>Name: Raja-Ram Pandey</p>
+                </div>
+                <div class="pr_leaderboard_marks">
+                    <p>Marks: 60</p>
+                </div>
+                <div class="pr_leaderboard_rank">
+                    <p>Rank: 12th</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pr_leaderboard_ranklist">
+        <table>
+
+            <tr class="pr_border_bottom">
+                <th class="leaderboard_rank">Rank</th>
+                <th class="leaderboard_name">Name</th>
+                <th class="leaderboard_marks">Score</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Maria Anders</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Francisco Chang</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Roland Mendel</td>
+                <td>95</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

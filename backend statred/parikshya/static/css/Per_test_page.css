@@ -5,7 +5,10 @@ body {
     margin: 0%;
     background-color: #212529;
 }
-
+.pr_navbar_col3_item3 h3{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
 .pr_bigbox {
     height: 500px;
     width: 65%;
