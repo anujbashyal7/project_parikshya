@@ -8,7 +8,7 @@
         <div class="pr_packages_content_heading_hr"></div>
     </div>
     <div class="pr_packages_content_boxes">
-        {% for i in course_query %}
+        {% for i in main_section %}
         <div class="pr_packages_content_boxes_box">
             <div class="pr_packages_content_boxes_box_img">
                 <img src="{{i.photo_img.url}}" alt="">
@@ -18,30 +18,6 @@
             </div>
         </div>
         {% endfor %}
-        <!--        <div class="pr_packages_content_boxes_box">-->
-        <!--            <div class="pr_packages_content_boxes_box_img">-->
-        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
-        <!--            </div>-->
-        <!--            <div class="pr_packages_content_boxes_box_text">-->
-        <!--                <p>+2 CHAPTERS</p>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="pr_packages_content_boxes_box">-->
-        <!--            <div class="pr_packages_content_boxes_box_img">-->
-        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
-        <!--            </div>-->
-        <!--            <div class="pr_packages_content_boxes_box_text">-->
-        <!--                <p>+2 CHAPTERS</p>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div class="pr_packages_content_boxes_box">-->
-        <!--            <div class="pr_packages_content_boxes_box_img">-->
-        <!--                <img src="{% static 'image/non.jpg' %}" alt="">-->
-        <!--            </div>-->
-        <!--            <div class="pr_packages_content_boxes_box_text">-->
-        <!--                <p>+2 CHAPTERS</p>-->
-        <!--            </div>-->
-        <!--        </div>-->
     </div>
 </div>
 <div class="pr_packages_get_started">

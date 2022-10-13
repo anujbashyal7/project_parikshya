@@ -35,12 +35,16 @@
     margin-top: 12px;
     font-size: larger;
 }
-
+.pr_mocktest_testbox_whole{
+height:100%;
+width:90%;
+margin:auto;
+}
 .pr_mocktest_testbox {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-  /*  height: 28rem; */
     width: 100%;
+    height:527px;
 }
 
 .pr_mocktest_testbox a {

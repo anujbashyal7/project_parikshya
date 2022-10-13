@@ -9,14 +9,20 @@ from app1.models import Course
 
 def index(request):
     course_query = Course.objects.all()
-    context = {'course_query': course_query}
+    course_query_1 = Course.objects.order_by('-id')
+    main_section = course_query_1[0:4]
+    context = {'course_query': course_query, 'main_section': main_section}
     return render(request, 'client/index.php', context)
 
 
 @login_required(login_url='login_page')
 def mock_test_page(request):
     course_query = Course.objects.all()
-    context = {'course_query': course_query}
+    course_query_1 = Course.objects.order_by('-id')
+    section1 = course_query_1[0:4]
+    section2 = course_query_1[4:8]
+    context = {'course_query': course_query, 'course_query_1': course_query_1, 'section1': section1,
+               'section2': section2}
     return render(request, 'mocktest.html', context)
 
 
