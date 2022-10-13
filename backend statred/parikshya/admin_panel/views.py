@@ -75,6 +75,7 @@ def add_course_post(request, ):
             question_sets = form.cleaned_data.get('question_sets')
             Course_price = form.cleaned_data.get('Course_price')
             photo_img = form.cleaned_data.get('photo_img')
+            print(photo_img)
             Course_detail = form.cleaned_data.get('Course_detail')
             add_course_query = Course.objects.create(Course_Name=Course_Name, question_sets=question_sets,
                                                      Course_price=Course_price,

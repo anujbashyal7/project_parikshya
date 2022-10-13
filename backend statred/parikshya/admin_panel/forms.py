@@ -19,4 +19,4 @@ class EditCourse(forms.ModelForm):
 
     class Meta:
         model = Course
-        fields = ('Course_Name','question_sets', 'Course_price', 'photo_img', 'Course_detail')
+        fields = ('Course_Name', 'question_sets', 'Course_price', 'photo_img', 'Course_detail')

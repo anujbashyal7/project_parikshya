@@ -15,12 +15,16 @@
 {% include '../admin_panel/sidebar.html' %}
 <div class="pr_ad_addcourse_main">
     <h2>Add Course</h2>
-    <form action="{% url 'add_course_post' %}" method="post" >
+    <form action="{% url 'add_course_post' %}" method="post"  enctype="multipart/form-data">
         {% csrf_token %}
         <div class="pr_ad_addcourse_item">
             <label for="name">Course Name:</label>
             {{form.Course_Name}}
 
+        </div>
+         <div class="pr_ad_addcourse_item">
+            <label for="name">Cover Image:</label>
+            {{form.photo_img}}
         </div>
         <div class="pr_ad_addcourse_item">
             <label for="questions">No. of Questions Sets:</label>
@@ -29,6 +33,10 @@
         <div class="pr_ad_addcourse_item">
             <label for="fullmarks">Price:</label>
           {{form.Course_price}}
+        </div>
+         <div class="pr_ad_addcourse_item">
+            <label for="fullmarks">Course Details:</label>
+          {{form.Course_detail}}
         </div>
         <div class="pr_ap_submit">
             <input type="submit" value="Submit">
