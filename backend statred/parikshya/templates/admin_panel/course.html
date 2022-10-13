@@ -33,6 +33,7 @@
         </div>
     </div>
     <div class="pr_ap_course_table">
+
         <table id="courses">
             <tr>
                 <th class="pr_ap_course_name">Name</th>
@@ -40,10 +41,11 @@
                 <th class="pr_ap_course_price">Price</th>
                 <th class="pr_ap_course_action">Action</th>
             </tr>
+            {% for i in course_query %}
             <tr>
-                <td>IOE Entrance</td>
-                <td>5</td>
-                <td>5000</td>
+                <td>{{i.Course_Name}}</td>
+                <td>{{i.question_sets}}</td>
+                <td>{{i.Course_price}}</td>
                 <td class="pr_ap_course_action_td">
                     <a href="#">
                         <button class="pr_ap_mainbtn">Main</button>
@@ -51,23 +53,10 @@
                     <a href="{% url 'edit_course' %}">
                         <button class="pr_ap_editbtn">Edit</button>
                     </a>
-                    <button class="pr_ap_deletebtn">Delete</button>
+                        <button class="pr_ap_deletebtn">Delete</button>
                 </td>
             </tr>
-            <tr>
-                <td>IOM Entrance</td>
-                <td>9</td>
-                <td>7000</td>
-                <td class="pr_ap_course_action_td">
-                    <a href="#">
-                        <button class="pr_ap_mainbtn">Main</button>
-                    </a>
-                    <a href="{% url 'edit_course' %}">
-                        <button class="pr_ap_editbtn">Edit</button>
-                    </a>
-                    <button class="pr_ap_deletebtn">Delete</button>
-                </td>
-            </tr>
+            {% endfor %}
         </table>
     </div>
 </div>

@@ -41,7 +41,9 @@ def dashboard_page(request):
 
 @login_required(login_url='ap_index')
 def course_page(request):
-    return render(request, 'admin_panel/course.html')
+    course_query = Course.objects.all()
+    context = {'course_query': course_query}
+    return render(request, 'admin_panel/course.html', context)
 
 
 @login_required(login_url='ap_index')
@@ -90,7 +92,32 @@ def add_course_post(request, ):
 
 @login_required(login_url='ap_index')
 def edit_course(request):
-    return render(request, 'admin_panel/edit_course.html')
+    course_query = Course.objects.all()
+    context = {'course_query': course_query}
+    return render(request, 'admin_panel/edit_course.html', context)
+
+
+def edit_course_post(request, ids):
+    if request.method == 'POST':
+        form = EditCourse(request.POST, request.FILES)
+        if form.is_valid():
+            Course_Name = form.cleaned_data.get('Course_Name')
+            question_sets = form.cleaned_data.get('question_sets')
+            Course_price = form.cleaned_data.get('Course_price')
+            photo_img = form.cleaned_data.get('photo_img')
+            Course_detail = form.cleaned_data.get('Course_detail')
+
+            edit_course_query = Course.objects.get(id=ids)
+            edit_course_query.save()
+            return redirect('course_page')
+        else:
+            print(form.errors)
+
+
+# def delete_course(request, ids):
+#     course_query = Course.objects.get(id=ids)
+#     course_query.delete()
+#     return redirect('course_page')
 
 
 @login_required(login_url='ap_index')
