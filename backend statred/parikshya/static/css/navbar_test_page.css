@@ -5,9 +5,10 @@
 }
 
 .pr_navbar_testpage_maincontainer {
-    background-color: #60C2BC;
+    background-color: white;
     height: 65px;
     width: 100%;
+    color:black;
     display: flex;
     position: sticky;
     top: 0;
@@ -98,13 +99,15 @@ width:30% !important;
 }
 
 .pr_navbar_testpage_col2_time_hr span {
-    background: rgb(255, 255, 255);
+    background: black;
     padding: 3px 13px;
+    color:white;
     border-radius: 10px;
 }
 
 .pr_navbar_testpage_col2_time_dot {
-    color: white;
+    color: black;
+    font-weight:bold;
 }
 .pr_navbar_testpage_null{
     width: 40%;

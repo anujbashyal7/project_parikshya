@@ -1,17 +1,18 @@
 /* css for navbar starts here */
 .pr_navbar_maincontainer a {
     text-decoration: none;
-    color: white !important;
+    color: black !important;
 }
 
 .pr_navbar_maincontainer {
-    background-color: #60C2BC;
+    background-color: white;
     height: 65px;
     width: 100%;
     display: flex;
     position: sticky;
     top: 0;
     z-index: 2;
+    color:black !important;
 }
 
 .pr_navbar_col1 {
@@ -216,3 +217,29 @@ background-color:#46b8da;
 }
 /* css for responsive navbar starts here */
 
+.pr_navbar_col3_login{
+    width: 56%;
+    height: 60%;
+    background: #3750bf;
+    border-radius: 5px;
+color:white;
+margin:auto;
+  box-shadow: 6px 6px 8px -2px #888888;
+}
+.pr_navbar_col3_login span{
+text-align:center;
+margin:0px 0px 0px 14px;
+}
+.pr_navbar_col3_register{
+  width: 77%;
+    height: 60%;
+    background: #3750bf;
+    border-radius: 5px;
+color:white;
+margin:auto;
+  box-shadow: 6px 6px 8px -2px #888888;
+}
+.pr_navbar_col3_register span{
+text-align:center;
+margin:0px 0px 0px 12px;
+}

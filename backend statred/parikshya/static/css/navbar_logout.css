@@ -1,15 +1,16 @@
 /* css for navbar starts here */
 .pr_navbar_maincontainer a {
     text-decoration: none;
-    color: white !important;
+    color: black !important;
 }
 
 .pr_navbar_maincontainer {
-    background-color: #60C2BC;
+    background-color: white;
     height: 65px;
     width: 100%;
     display: flex;
     position: sticky;
+    color:black;
     top: 0;
     z-index: 2;
 }
@@ -73,7 +74,7 @@
 }
 
 .pr_navbar_col3_item1 {
-    width: 60%;
+    width: 80%;
 margin-top: 24px;
     cursor: pointer;
 }
@@ -87,8 +88,8 @@ margin-top: 24px;
 }
 
 .pr_navbar_col3_item3 {
-    width:65px;
-    height:40px;
+    width: 42px;
+    height: 38px;
     cursor: pointer;
 margin-right:20px;
 margin: 12px 20px 0px 0px;
@@ -101,12 +102,12 @@ position:relative;
 top:8px;
 }
 .pr_navbar_col3_item3_name{
-    background-color: white;
+    background-color: black;
 border-radius:50%;
 margin-top:2px;
 height:100%;
 width:100%;
-color:#212529;
+color:white;
 }
 .pr_navbar_col3_item3_responsive{
 display:none;
@@ -114,7 +115,7 @@ display:none;
 .pr_navbar_col3_item4{
     font-weight: bold;
     width: 40%;
-    background-color: #004d64;
+    background-color:#004d644f;
     cursor: pointer;
     justify-content: center;
     text-align: center;

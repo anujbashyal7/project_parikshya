@@ -17,7 +17,7 @@
 
 .pr_mocktest_maincontainer .pr_mocktest_language h2 {
     color: white;
-    font-size: 40px;
+    font-size: 37px;
     line-height: 5rem;
 }
 
@@ -58,8 +58,11 @@ margin:auto;
     border: 1px solid #707070;
     border-radius: 27px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
-
+.pr_mocktest_testbox_box:hover{
+ transform: scale(1.05);
+}
 .pr_mocktest_testbox_box_img {
     height: 70%;
     width: 100%;
@@ -123,6 +126,7 @@ text-decoration:none;
 .pr_mocktest_above_footer_lang {
     width: 30%;
     padding: 24px 30px 0px 0px;
+    margin-left:43px;
 }
 
 .pr_mocktest_above_footer_buy_course {

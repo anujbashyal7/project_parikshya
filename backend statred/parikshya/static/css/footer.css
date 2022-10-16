@@ -5,16 +5,26 @@
 }
 
 .pr_footer_main_container {
-    background: #212529;
+    background: #fff;
     width:100%;
-    color: white;
+    color: black;
     border-top: 2px solid #707070;
 }
-
+.pr_footer_content_box{
+display:flex;
+}
 .pr_footer_content_box_component {
-    color: white;
+    color: black;
     padding: 25px 35px 20px;
-    font-size: 28px
+    width:40%;
+
+}
+.pr_footer_content_box_component_next{
+width:60%;
+padding:25px;
+}
+.pr_footer_content_box_component_next p{
+padding:20px 0px 0px 0px;
 }
 
 .pr_footer_content_box ul {
@@ -29,9 +39,8 @@
    display:flex;
 }
 
-.li_footer img {
-    width: 23px;
-    height: 100%;
+.li_footer i {
+    font-size:22px;
 }
 .li_footer p{
 width:90%;
@@ -56,7 +65,7 @@ font-size:large;
 
 .pr_footer_right_and_policy_col2 a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 2px 8px;
 }
 
